@@ -75,6 +75,39 @@ nav {
     fill: #000;
 }
 
+
+.section-container h1{
+    font-size: 45px;
+
+}
+
+.section-container p{
+    font-size: 23px;
+
+}
+
+#Exit-Ticket{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgba(76,166,250,0.1);
+}
+
+#exit-ticket-img{
+    max-width:900px;
+    height:auto;
+}
+.right-caption{
+    margin-left:50px;
+    margin-bottom: 100px;
+    width: 400px;;
+}
+
+.right-caption p{
+    margin-top: 10px;
+}
+
 @media only screen and (max-width: 768px) {
     .nav-logo {
         height: 2em;
@@ -97,4 +130,53 @@ nav {
         height: 1.25em;
         cursor: pointer;
     }
+    .right-caption{
+        width: 400px;
+        text-align: center;
+    }
+
+
+
+}
+
+@media only screen and (max-width: 1190px) {
+    
+    #Exit-Ticket{
+        flex-direction: column;
+        text-align: center;
+    }
+    #exit-ticket-img{
+        width:700px;
+        height: auto;
+    }
+    .right-caption{
+        margin-left: 0px;
+        margin-bottom: 0px;
+    }
+
+
+}
+
+
+@media only screen and (max-width: 700px) {
+    #Exit-Ticket{
+        align-items: center;
+        justify-content: center;
+    }
+    #exit-ticket-img{
+        width:350px;
+        height: auto;
+    }
+    .right-caption{
+
+        width: 300px;
+    }
+    .right-caption h1{
+        font-size: 31px;
+    }
+    .right-caption p{
+        font-size: 13px;
+    }
+
+
 }

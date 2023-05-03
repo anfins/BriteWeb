@@ -184,18 +184,18 @@ nav {
 @media only screen and (max-width: 600px) {
 
     #exit-ticket-img{
-        width:80%;
+        width:100%;
         height: auto;
     }
     .right-caption{
-        width: 70%;
+        width: 100%;
     }
 
     .right-caption h1{
-        font-size: 18px;
+        font-size: 21px;
     }
     .right-caption p{
-        font-size: 10px;
+        font-size: 14px;
     }
 
 

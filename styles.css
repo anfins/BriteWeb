@@ -148,14 +148,22 @@ nav {
         text-align: center;
     }
     #exit-ticket-img{
-        width: 70%;
+        width: 65%;
         height: auto;
     }
     .right-caption{
         margin-left: 0px;
         margin-bottom: 0px;
+        width: 500px;
+
     }
 
+    .right-caption h1{
+        font-size: 26px;
+    }
+    .right-caption p{
+        font-size: 17px;
+    }
 
 }
 
@@ -163,18 +171,31 @@ nav {
 @media only screen and (max-width: 1000px) {
 
     #exit-ticket-img{
-        width:100%;
+        width:65%;
         height: auto;
     }
     .right-caption{
-
-        width: 300px;
+        width: 70%;
     }
+
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    #exit-ticket-img{
+        width:80%;
+        height: auto;
+    }
+    .right-caption{
+        width: 70%;
+    }
+
     .right-caption h1{
-        font-size: 31px;
+        font-size: 18px;
     }
     .right-caption p{
-        font-size: 13px;
+        font-size: 10px;
     }
 
 

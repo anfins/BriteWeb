@@ -111,6 +111,24 @@ nav {
 
 }
 
+.left-caption{
+    margin-right:50px;
+    margin-bottom: 100px;
+}
+
+.left-caption p{
+    margin-top: 10px;
+    font-size: 1.7em;
+
+}
+
+
+.left-caption h1{
+    font-size: 3.1em;
+
+}
+
+
 
 #Anonymous-Questions{
 
@@ -126,6 +144,19 @@ nav {
 
 }
 
+
+#Track-Attendance{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgba(76,166,250,0.1);
+}
+
+#calendar-img{
+    width:60%;
+    height: auto;
+}
 @media only screen and (max-width: 768px) {
     .nav-logo {
         height: 2em;
@@ -172,6 +203,14 @@ nav {
         justify-content: center;
         text-align: center;
     }
+
+    #Track-Attendance{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
     #exit-ticket-img{
         width: 65%;
         height: auto;
@@ -182,13 +221,30 @@ nav {
         width: 500px;
 
     }
-
     .right-caption h1{
         font-size: 26px;
     }
     .right-caption p{
         font-size: 17px;
     }
+    .left-caption h1{
+        font-size: 26px;
+    }
+    .left-caption p{
+        font-size: 17px;
+    }
+    .left-caption{
+        margin-right: 0px;
+        margin-bottom: 0px;
+        width: 500px;
+
+    }
+
+    #calendar-img{
+        order:1;
+    }
+
+    
 
 }
 
@@ -200,6 +256,9 @@ nav {
         height: auto;
     }
     .right-caption{
+        width: 70%;
+    }
+    .left-caption{
         width: 70%;
     }
 
@@ -214,6 +273,9 @@ nav {
     }
     .right-caption{
         width: 100%;
+    }
+    .left-caption{
+        width: 70%;
     }
 
     .right-caption h1{

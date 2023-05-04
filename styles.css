@@ -121,7 +121,7 @@ nav {
 }
 
 #questions-img{
-    width: 60%;
+    width: 80%;
     height:auto;
 
 }
@@ -207,7 +207,7 @@ nav {
 }
 
 @media only screen and (max-width: 600px) {
-
+    
     #exit-ticket-img{
         width:100%;
         height: auto;
@@ -224,4 +224,10 @@ nav {
     }
 
 
+}
+@media only screen and (max-width: 500px) {
+
+    .section-container{
+        height: 75vh;
+    }
 }

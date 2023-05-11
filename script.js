@@ -11,7 +11,11 @@ const studentContent = document.getElementById("student-content");
 
 //Event Listeners
 
+eduButton.addEventListener("click", viewEducator);
+
+
 studentButton.addEventListener("click", viewStudent);
+
 
 
 
@@ -21,9 +25,9 @@ function viewEducator(event){
 
     const item = event.target;
     console.log(item);
-    eduContent.style.display = "flex"; //making the dark mode toggle visible
-    studentContent.style.display = "none";
-    
+    eduContent.style.display = "flex"; 
+    eduContent.style.flexDirection = "column";
+    studentContent.style.display = "none"; 
 
 }
 
@@ -32,8 +36,8 @@ function viewStudent(event){
 
     const item = event.target;
     console.log(item);
-    studentContent.style.display = "flex"; //making the dark mode toggle visible
-    eduContent.style.display = "none";
-    
+    studentContent.style.display = "flex";
+    studentContent.style.flexDirection = "column"; 
+    eduContent.style.display = "none"; 
 
 }

@@ -18,15 +18,6 @@
 
 /*             General Styles             */
 
-.hidden{
-    opacity: 0;
-    transition: all 0.5s;
-}
-
-.show{
-    opacity: 1;
-}
-
 
 h1 {
     font-size: 52px;
@@ -185,182 +176,9 @@ nav a {
     min-width: 584px;
 }
 
-/*             Exit Ticket Section             */
-
-#exit-ticket{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgba(var(--blue), 0.1);
-    gap: 64px;
-}
-
-.survey-images {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 48px;
-    width: fit-content;
-}
-
-.survey-images .phone-img {
-    max-width: 50%;
-}
-
-.exit-ticket-text {
-    min-width: 320px;
-    max-width: 40%;
-}
-
-/*          Product Section              */
-
-#Product-Section{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: rgba(var(--blue), 0.1);
-
-}
-#Built-For{
-    color:black;
-    font-weight: bold;
-    font-size: 40px;
-    margin-bottom: 10px;
-}
-.selection-buttons{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.selection-button{
-    background-color: black;
-    color: white;
-    width: 240px;
-    text-align: left;
-    border: none;
-    border-radius: 10px;
-    padding:5px;
-    margin-top: 10px;
-    font-size: 26px;
-    font-weight: bold;
-}
-.selection-button:hover{
-    background-color: white;
-    color: black;
-    cursor: pointer;
-}
-
-
-.product-content{
-    flex:0.4;
-
-}
-
-.product-img{
-    width: 80%;
-}
-
-.product-image-content{
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    flex:1;
-    margin-left: 20px;
-}
-
-#educator-content{
-    display: flex;
-    
-    flex-direction: column;
-    align-items: end;
-
-}
-
-#learn-more-edu{
-    margin-top: 10px;
-}
-
-#student-content{
-    display: none;
-    align-items: end;
-}
-
-#administrator-content{
-    display: none;
-    align-items: end;
-
-}
-
-
-/*          Product Section   (purely for small screens)           */
-
-
-#Product-SectionB{
-    display:none;
-}
-
-
-/*     Anonymous Questions Section       */
-
-#Anonymous-Questions{
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    background-color:white;
-}
-
-#questions-img{
-    width: 65%;
-    height:auto;
-
-}
-
-
-/*     Track Attendance Section       */
-
-#Track-Attendance{
-
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items:center;
-
-    background-color: rgba(76,166,250,0.1);
-}
-
-#calendar-img{
-    width:57%;
-    height: auto;
-}
-
-.questions-text{
-    margin-left:12px;
-}
 
 
 
-/*             About HTML             */
-
-#About-Div{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    overflow: auto;
-}
-
-.about-text{
-    flex:1.3;
-}
-#About-Img{
-    flex:1;
-}
-#founders-img{
-    width:100%;
-}
 
 /*             Media Queries             */
 
@@ -502,25 +320,6 @@ nav a {
     .hero-text {
         width: auto;
         min-width: auto;
-    }
-    #Product-Section{
-        display: none;
-    }
-    #Product-SectionB{
-        display: block;
-    }
-
-    #realtime-img{
-        display: none;
-    }
-    
-    #student-img{
-        display: none;
-    }
-
-     
-    #admin-img{
-        display: none;
     }
 
     .exit-ticket-text {

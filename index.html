@@ -12,7 +12,7 @@
     
     <section id="hero-section" class="section-container">
       <nav>
-        <a href="/">
+        <a href="index.html">
           <img class="nav-logo" src="./assets/images/logo.svg" alt="Brite" />
         </a>
   
@@ -23,10 +23,16 @@
   
         <ul class="nav-links">
           <li>
-              <a href="#">Home</a>
+              <a href="index.html">Home</a>
           </li>
           <li>
-              <a href="#">About</a>
+            <a href = "educators.html">Educators</a>
+          </li>
+          <li>
+              <a href = "students.html">Students</a>
+          </li>
+          <li>
+              <a href="about.html">About</a>
           </li>
           <li>
               <a href="#">Team</a>
@@ -54,6 +60,58 @@
       </div>
     </section>
 
+    <section class = "section-container" id = "Product-Section">
+      <div class = "product-content">
+        <div class = "selection-buttons">
+          <h1 class = "text-large" id = "Built-For"> Built For...</h1>
+          
+          <div class = "selection-button-frame">  <!--Should convert to list elements at some point-->
+            <button class = "selection-button text-medium" id = "educator-button">1. Educators</button>
+          </div>
+          <div class = "selection-button-frame">
+            <button class = "selection-button text-medium" id = "student-button">2. Students</button>
+          </div>
+          <div class = "selection-button-frame">
+            <button class = "selection-button text-medium" id = "administrator-button">3. Administrators</button>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div class = "product-image-content">
+        <div id = "educator-content">
+          <img src = "./assets/images/realtime.svg" class = "product-img" id = "realtime-img">
+          <p>Some random fucking text</p>
+          <a href="educators.html" class="cta-btn" id = "learn-more-edu">Learn more</a>
+
+        </div>
+        <div id = "student-content">
+          <img src = "./assets/images/basicquestions.svg" class = "product-img" id = "student-img">
+          <p>Some random fucking text</p>
+          
+        </div>
+        <div id = "administrator-content">
+          
+          <img src = "./assets/images/realtime.svg" class = "product-img" id = "admin-img">
+          <p>Some random fucking text</p>
+
+        </div>
+      </div>
+    </section>
+
+    <section class = "section-container" id = "Product-SectionB">
+
+      <h1>Built For...</h1>
+      <h2>Educators</h2>
+      <p>somfnownafm</p>
+      <h2>Students</h2>
+      <p>somfnownafm</p>
+      <h2>Administrators</h2>
+      <p>somfnownafm</p>
+
+    </section>
+
     <section class="section-container" id="exit-ticket">
       <div class="survey-images">
         <img src="./assets/images/brite-survey-1.svg" alt="Brite Survey" class="phone-img">
@@ -67,7 +125,9 @@
       </div>
     </section>
 
-    <section></section>
+
+
+
 
     
     <section class = "section-container" id = "Anonymous-Questions">
@@ -75,7 +135,7 @@
     
       <div class = "questions-text right-caption">
         <h1>Communicate <span class = "heading-1 blue-text"> Anonymously</span> </h1>
-        <p>with both your peers and your professors during class.</p>
+        <p class = "text-medium">with both your peers and your professors during class.</p>
       </div>
 
     </section>
@@ -83,13 +143,14 @@
     <section class = "section-container" id = "Track-Attendance">
       <div class = "attendance-text left-caption">
         <h1>Track Attendance...</h1>
-        <p>Without having to count.</p>
+        <p class = "text-medium">Without having to count.</p>
       </div>
       <img src= "assets/images/calendar.svg" id ="calendar-img">
     
      
 
     </section>
+    <script src = "script.js"></script>
 
   </body>
 </html>

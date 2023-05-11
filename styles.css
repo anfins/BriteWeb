@@ -203,7 +203,16 @@ nav a {
     max-width: 40%;
 }
 
+/*          Product Section              */
 
+#Product-Section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color:rgba(var(--blue), 0.1);
+
+}
 
 /*     Anonymous Questions Section       */
 

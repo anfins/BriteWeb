@@ -18,14 +18,6 @@
 
 /*             General Styles             */
 
-.hidden{
-    opacity: 0;
-    transition: all 0.5s;
-}
-
-.show{
-    opacity: 1;
-}
 
 
 h1 {
@@ -271,9 +263,10 @@ nav a {
 
 #educator-content{
     display: flex;
-    
     flex-direction: column;
     align-items: end;
+    transition: opacity 0.5s;
+
 
 }
 
@@ -284,6 +277,9 @@ nav a {
 #student-content{
     display: none;
     align-items: end;
+    opacity: 0;
+    transition: opacity 0.5s;
+
 }
 
 #administrator-content{
@@ -301,7 +297,15 @@ nav a {
 }
 
 
-/*     Anonymous Questions Section       */
+/*          Trusted By Section                                    */
+
+
+
+
+
+
+
+/*     Anonymous Questions Section                                */
 
 #Anonymous-Questions{
 

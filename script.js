@@ -27,7 +27,14 @@ function viewEducator(event){
     console.log(item);
     eduContent.style.display = "flex"; 
     eduContent.style.flexDirection = "column";
-    studentContent.style.display = "none"; 
+    setTimeout(function() {
+        studentContent.style.display = "none"; 
+        eduContent.style.opacity = '1';
+
+    }, 20);
+
+    studentContent.style.opacity = '0';
+    
 
 }
 
@@ -37,7 +44,16 @@ function viewStudent(event){
     const item = event.target;
     console.log(item);
     studentContent.style.display = "flex";
-    studentContent.style.flexDirection = "column"; 
-    eduContent.style.display = "none"; 
+    studentContent.style.flexDirection = "column";
+    eduContent.style.opacity = '0';
+
+    setTimeout(function() {
+        eduContent.style.display = "none"; 
+        studentContent.style.opacity = '1';
+    }, 20);
+
+    
+ 
+    
 
 }

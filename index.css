@@ -23,19 +23,42 @@
 
 /*          Educator Section              */
 
-#educatorSection{
+#educatorSection {
     background-color: rgba(var(--blue), 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.educator-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.educator-dashboard {
+    box-shadow: 0 4px 32px -6px rgba(0, 0, 0, 0.4);
+    border-radius: 16px;
+}
+
+.educator-text {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 32px;
 }
 
 /*          Student Section              */
 
-#educatorSection{
+#studentSection {
     background-color: rgb(var(--dark-gray));
 }
 
 /*          Contact Section              */
 
-#contactSection{
+#contactSection {
     
 }
 

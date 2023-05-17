@@ -6,6 +6,7 @@
 
 :root {
     --blue: 76, 166, 250;
+    --dark-gray: 65, 65, 65;
 }
 
 * {
@@ -16,30 +17,17 @@
     font-size: 16px;
 }
 
-/*             General Styles             */
-
-
-
-h1 {
+h1, .heading-1 {
     font-size: 52px;
     font-weight: 700;
 }
 
-h2 {
-    font-size: 36px;
-    font-weight: 600;
-}
-.heading-1 {
-    font-size: 52px;
-    font-weight: 700;
-}
-
-.heading-2 {
+h2, .heading-2 {
     font-size: 36px;
     font-weight: 600;
 }
 
-.text-large {
+p, .text-large {
     font-size: 24px;
     font-weight: 400;
 }
@@ -52,23 +40,6 @@ h2 {
 .text-small {
     font-size: 16px;
     font-weight: 400;
-}
-
-.right-caption {
-    display: flex;
-    flex-flow: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 24px;
-}
-
-
-.left-caption{   
-    display: flex;
-    flex-flow: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 24px;
 }
 
 .text-colored {
@@ -99,7 +70,6 @@ h2 {
     max-height: 80vh !important;
     filter: drop-shadow(0 8px 24px rgba(0, 0, 0, 0.4));
 }
-
 
 .blue-text{
     color: #4CA6FA;
@@ -154,269 +124,32 @@ nav a {
     fill: #000;
 }
 
-/*             Hero Section             */
+/*          Footer              */
 
-.hero-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 32px 0;
-}
-
-.hero-content .phone-img {
-    width: 25%;
-}
-
-.hero-text {
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 32px;
-    width: 584px;
-    min-width: 584px;
-}
-
-/*             Exit Ticket Section             */
-
-#exit-ticket{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+#footer {
     background-color: rgba(var(--blue), 0.1);
-    gap: 64px;
 }
-
-.survey-images {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 48px;
-    width: fit-content;
-}
-
-.survey-images .phone-img {
-    max-width: 50%;
-}
-
-.exit-ticket-text {
-    min-width: 320px;
-    max-width: 40%;
-}
-
-/*          Product Section              */
-
-#Product-Section{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: rgba(var(--blue), 0.1);
-
-}
-#Built-For{
-    color:black;
-    font-weight: bold;
-    font-size: 40px;
-    margin-bottom: 10px;
-}
-.selection-buttons{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.selection-button{
-    background-color: black;
-    color: white;
-    width: 240px;
-    text-align: left;
-    border: none;
-    border-radius: 10px;
-    padding:5px;
-    margin-top: 10px;
-    font-size: 26px;
-    font-weight: bold;
-}
-.selection-button:hover{
-    background-color: white;
-    color: black;
-    cursor: pointer;
-}
-
-
-.product-content{
-    flex:0.4;
-
-}
-
-.product-img{
-    width: 80%;
-}
-
-.product-image-content{
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    flex:1;
-    margin-left: 20px;
-}
-
-#educator-content{
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    transition: opacity 0.5s;
-
-
-}
-
-#learn-more-edu{
-    margin-top: 10px;
-}
-
-#student-content{
-    display: none;
-    align-items: end;
-    opacity: 0;
-    transition: opacity 0.5s;
-
-}
-
-#administrator-content{
-    display: none;
-    align-items: end;
-
-}
-
-
-/*          Product Section   (purely for small screens)           */
-
-
-#Product-SectionB{
-    display:none;
-}
-
-
-/*          Trusted By Section                                    */
-
-
-
-
-
-
-
-/*     Anonymous Questions Section                                */
-
-#Anonymous-Questions{
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    background-color:white;
-}
-
-#questions-img{
-    width: 65%;
-    height:auto;
-
-}
-
-
-/*     Track Attendance Section       */
-
-#Track-Attendance{
-
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items:center;
-
-    background-color: rgba(76,166,250,0.1);
-}
-
-#calendar-img{
-    width:57%;
-    height: auto;
-}
-
-.questions-text{
-    margin-left:12px;
-}
-
-
-
 
 /*             Media Queries             */
 
 @media only screen and (max-width: 1200px) {
-    .survey-images .phone-img {
-        width: 50%;
-        max-width: none;
-    }
     
-    #Anonymous-Questions{
-        justify-content: center;
-        align-items:start;
-        flex-direction: column;
-    }
-
-    
-    #questions-img{
-        margin-top: 20px;
-        order: 2;
-    }
-    
-    #Anonymous-Questions .questions-text{
-        order: 1;
-    }
-    #Track-Attendance{
-        justify-content: center;
-        align-items:start;
-        flex-direction: column;
-    }
-    #About-Div{
-        justify-content: center;
-        align-items:start;
-        flex-direction: column;
-    }
 }
 
 @media only screen and (max-width: 992px) {
-    .hero-content .phone-img {
-        display: none;
-    }
-
-    .survey-images .phone-img {
-        display: none;
-        width: 90%;
-    }
-
-    .survey-images .phone-img:first-of-type {
-        display: block;
-    }
     
 }
 
 @media only screen and (max-width: 768px) {
-    h1 {
+    h1, .heading-1 {
         font-size: min(8vw, 48px);
     }
 
-    h2 {
+    h2, .heading-2 {
         font-size: min(7vw, 36px);
-    }
-    .heading-1{
-        font-size: min(8vw, 48px);
     }
 
-    .heading-2 {
-        font-size: min(7vw, 36px);
-    }
-    p{
-        font-size: 24px;
-    }
-    .text-large {
+    p, .text-large {
         font-size: 25px;
     }
 
@@ -488,45 +221,6 @@ nav a {
     .hero-text {
         width: auto;
         min-width: auto;
-    }
-    #Product-Section{
-        display: none;
-    }
-    #Product-SectionB{
-        display: block;
-    }
-
-    #realtime-img{
-        display: none;
-    }
-    
-    #student-img{
-        display: none;
-    }
-
-     
-    #admin-img{
-        display: none;
-    }
-
-    .exit-ticket-text {
-        min-width: 0;
-        max-width: none;
-    }
-
-    .exit-ticket-text .heading-2 {
-        max-width: 320px;
-    }
-
-    .survey-images {
-        display: none;
-    }
-     
-    #questions-img{
-        width:80%;
-    }
-    #calendar-img{
-        width:80%;
     }
 }
 

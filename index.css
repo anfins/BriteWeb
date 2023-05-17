@@ -34,10 +34,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 32px;
+    gap: 64px;
 }
 
 .educator-dashboard {
+    width: 60%;
     box-shadow: 0 4px 32px -6px rgba(0, 0, 0, 0.4);
     border-radius: 16px;
 }
@@ -65,7 +66,17 @@
 /*             Media Queries             */
 
 @media only screen and (max-width: 1200px) {
-    
+    .educator-content {
+        flex-flow: column-reverse;
+    }
+
+    .educator-dashboard {
+        width: 600px;
+    }
+
+    .educator-text {
+        max-width: 600px;
+    }
 }
 
 @media only screen and (max-width: 992px) {
@@ -75,9 +86,22 @@
 }
 
 @media only screen and (max-width: 768px) {
-    
+    .hero-text {
+        width: auto;
+        min-width: auto;
+    }
+
+    .educator-dashboard {
+        width: 500px;
+    }
+
+    .educator-text {
+        max-width: 500px;
+    }
 }
 
 @media only screen and (max-width: 600px) {
-    
+    .educator-dashboard {
+        display: none;
+    }
 }

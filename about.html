@@ -7,8 +7,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>About</title>
-        <link rel="stylesheet" href="./styles.css">
-        <link rel="stylesheet" href="./about.css">
+        <link rel="stylesheet" href="about.css">
 
     </head>
     <body>
@@ -31,40 +30,75 @@
                     <a href="about.html">About</a>
                 </li>
                 <li>
-                    <a href="#">Contact</a>
-                </li>
+                  <a href="contact.html">Contact</a>
+              </li>
                 <li class="bottom-link">
-                    <a href="#" class="cta-btn">Request a Demo</a>
+                    <a href="#" class="cta-btn">Login</a>
                 </li>
               </ul>
             </nav>
 
-            <div class = "about-hero">
+            <div class = "hero-content">
 
-                <h1 id = "About-Header">We Created Brite to Ensure Students Are Heard</h1>
-
-                <div id = "About-Div">
-                    <div class = "about-text">
-                        
-                        <p class = "text-medium">College is hard, <span class = "blue-text text-medium">we understand.</span> While earning our engineering degrees, we sat in many classrooms where we were often too afraid to ask our questions aloud because we thought they were "dumb questions". So, we held back from asking which diminished our learning. We were fortunate enough to make it through university, but many students aren't.
-        
-                            Additionally, we were only able to notify our professors with student-feedback once at the very end of each semester, so there was a huge disconnect present. Our team realized that by the time professors get this feedback, the students who needed the class adjustment most had either already failed, or dropped the course. After talking with professors at leading colleges across the country, we learned they were frustrated too.
-                            
-                            These familiar challenges inspired us to build an in-class app, Brite, to solve the issues we faced as students, and to give educators an easy to use platform that eases their problems. Our mission is to empower students to overcome systemic barriers by providing innovative solutions and support. We believe that every student deserves a fair chance at achieving their academic goals, regardless of their background or circumstances. By leveraging technology and data, we aim to create a more equitable and inclusive platform that sets students up for success. </p>
-                    </div>
-                    <div id= "About-Img">
-                        <img src = "./assets/images/foundersTCU.JPEG" id = "founders-img">
-                     </div>
+                <div id = "AboutText">
+                    <h1>College is hard,</h1>
+                    <h1 class= "blue-text hidden-slower">we understand.</h1>                    
                 </div>
+              
                
+            </div>
+            <div class = "bottom-scroll-indicator">
+                <h2 class = "hidden-b flashing">Scroll</h2>
             </div>
 
             
-         
-    
-      
            
         </section>
+      
+        <div class = "spacer">
+
+        </div>
+    
+        <section class = "section-container hidden-fly blue-background">
+            <div id = "AboutDivContent">
+                <div id = "AboutPara">
+                    <p>While earning our engineering degrees, we sat in many classrooms where we were often too afraid to ask our questions aloud because we thought they were "dumb questions". So, we held back from asking which diminished our ability to learn. We were fortunate enough to make it through university, <span class = "blue-text">but many students aren't.</span> </p>
+                    <p>Additionally, we are only able to provide our professors with quantitative student-feedback once at the very end of each semester through our end of the semester course evals. We realized that by the time professors receive this feedback (after the semester is over), the students who might have benefitted from a change in the course's pace or structure had either already failed, or dropped the course. After talking with professors at leading colleges across the country, we learned they were frustrated too.</p>
+                    <p>These familiar challenges inspired us to build Brite to solve the issues we face as students, and to give educators a simple to use platform to gather actionable feedback. Our mission is to empower students to overcome systemic barriers by providing innovative solutions and support. We believe that every student deserves a fair chance at achieving their academic goals, regardless of their background or circumstances. By leveraging technology and data, we aim to create a more equitable and inclusive platform that sets students up for success. </p>
+
+                </div>
+                <div id = "FoundersImg">
+                    <img class = "medium-img" src = "assets/images/foundersTCU.JPEG">
+                    <p>Brite Co-Founders current college students: Jorden Anfinson, Lukas Thackery, Nate Wimer, and Craig Dombrowski</p>
+                </div>
+               
+            </div>
+        </section>
+        
+        <section id = "Headshots" class = "section-container-smaller hidden">
+            <div class = "headshot">
+            
+                <img src = "assets/images/team/Nate.png">
+                <p>Nate Wimer</p>
+                <p>Co-Chief Executive Officer</p>
+            </div>
+            <div class = "headshot">
+                <img src = "assets/images/team/Lukas.png">
+                <p>Lukas Thackery</p>
+                <p>Co-Chief Executive Officer</p>
+            </div>
+            <div class = "headshot">
+                <img src = "assets/images/team/Craig.png">
+                <p>Craig Dombrowski</p>
+                <p>Chief Technical Officer</p>
+            </div>
+            <div class = "headshot">
+                <img src = "assets/images/team/Jorden.png">
+                <p>Jorden Anfinson</p>
+                <p>Chief Product Officer</p>
+            </div>
+        </section>
+    <script src = "script.js"></script>
 
     </body>
 </html>

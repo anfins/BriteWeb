@@ -126,7 +126,7 @@ h2 {
 
 
 .blue-background{
-    background-color: rgb(var(--blue));
+    background-color: rgba(var(--blue), 0.1);
 }
 
 .section-container {
@@ -167,9 +167,8 @@ h2 {
     color: #4CA6FA;
 }
 
-.medium-img{
-    width:80%;
-    height: auto;
+.bold-text{
+    font-weight: bold;
 }
 
 /*             Navigation             */
@@ -250,35 +249,48 @@ nav a {
     min-width: 584px;
 }
 
+#AboutDivContent{
+    margin-top:20px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#AboutPara{
+    flex : 0.5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow:auto;
+}
+
+#AboutPara p{
+    margin-top: 10px;
+}
 
 
-/*             About HTML             */
+/*             Founders Section             */
 
-
-#AboutText{
-    width: 100%;
+#Founders{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-#AboutText h1{
+#TransitionText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#TransitionText h1{
     font-size: 70px;
 }
-#AboutDivContent{
-    margin-top:20px;
-    display: flex;
-    flex-direction: row;
-}
 
-#AboutPara{
-    flex : 0.5;
-}
-
-#AboutPara p{
-    margin-top: 10px;
-}
 
 #FoundersImg{
     display: flex;
@@ -289,7 +301,15 @@ nav a {
     flex : 0.5;
 }
 
+#FoundersImg img{
+    width:100%;
+    height: auto;
+}
+
+
+
 #Headshots{
+    margin-top:10px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;

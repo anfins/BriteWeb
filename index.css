@@ -21,9 +21,14 @@
     min-width: 584px;
 }
 
+.phone-img {
+    max-height: 80vh !important;
+    filter: drop-shadow(0 8px 24px rgba(0, 0, 0, 0.4));
+}
+
 /*          Educator Section              */
 
-#educatorSection {
+#educator {
     background-color: rgba(var(--blue), 0.1);
     display: flex;
     justify-content: center;
@@ -53,13 +58,13 @@
 
 /*          Student Section              */
 
-#studentSection {
+#student {
     background-color: rgb(var(--dark-gray));
 }
 
 /*          Contact Section              */
 
-#contactSection {
+#contact {
     
 }
 

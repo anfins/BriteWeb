@@ -17,6 +17,10 @@
     font-size: 16px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 h1, .heading-1 {
     font-size: 52px;
     font-weight: 700;
@@ -24,7 +28,7 @@ h1, .heading-1 {
 
 h2, .heading-2 {
     font-size: 36px;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 p, .text-large {
@@ -64,11 +68,6 @@ p, .text-large {
     color: #fff !important;
     font-weight: 600;
     text-decoration: none;
-}
-
-.phone-img {
-    max-height: 80vh !important;
-    filter: drop-shadow(0 8px 24px rgba(0, 0, 0, 0.4));
 }
 
 .blue-text{
@@ -224,7 +223,35 @@ nav a {
     }
 }
 
+/*          Scroll Transitions           */
+
+.hidden-left, .hidden-right {
+    opacity: 0;
+    filter: blur(5px);
+    transition: all 1s;
+}
+
+.hidden-left {
+    transform: translateX(-100%);
+}
+
+.hidden-right {
+    transform: translateX(100%);
+}
+
+.show-left, .show-right {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0%);
+}
+
 @media only screen and (max-width: 600px) {
 
+}
+
+@media (prefers-reduced-motion) {
+    .hidden-left, .hidden-right {
+        transition: none;
+    }
 }
 

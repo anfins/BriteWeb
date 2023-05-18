@@ -8,11 +8,12 @@
 
     <link rel="stylesheet" href="./styles.css" />
     <link rel="stylesheet" href="./index.css" />
+    <script defer src="app.js"></script>
   </head>
   <body>
     <section id="hero-section" class="section-container">
       <nav>
-        <a href="index.html">
+        <a href="./index.html">
           <img class="nav-logo" src="./assets/images/logo.svg" alt="Brite" />
         </a>
 
@@ -28,22 +29,22 @@
 
         <ul class="nav-links">
           <li>
-            <a href="index.html">Home</a>
+            <a href="./index.html">Home</a>
           </li>
           <li>
-            <a href="about.html">About</a>
+            <a href="./about.html">About</a>
           </li>
           <li>
-            <a href="#">Contact</a>
+            <a href="#contact">Contact</a>
           </li>
           <li class="bottom-link">
-            <a href="#" class="cta-btn">Request a Demo</a>
+            <a href="#contact" class="cta-btn">Request a Demo</a>
           </li>
         </ul>
       </nav>
 
       <div class="hero-content">
-        <div class="hero-text">
+        <div class="hero-text hidden-left">
           <h1>
             Creating a
             <span class="heading-1 blue-text">brighter</span> classroom
@@ -67,7 +68,7 @@
       </div>
     </section>
 
-    <section class="section-container" id="educatorSection">
+    <section class="section-container" id="educator">
       <div class="educator-content">
         <img
           src="./assets/images/educator-dashboard.svg"
@@ -75,7 +76,7 @@
           class="educator-dashboard"
         />
         
-        <div class="educator-text">
+        <div class="educator-text hidden-right">
           <h2>
             Empower
             <span class="heading-2 blue-text">Educators</span>
@@ -94,11 +95,42 @@
       </div>
     </section>
 
-    <section class="section-container" id="studentSection">
-      
+    <section class="section-container" id="student">
+      <div class="student-content">
+        <div class="student-text hidden-left">
+          <h2>
+             <span class="heading-2 blue-text">Student</span> Centered 
+             Learning
+          </h2>
+  
+          <p class="text-medium">
+            Take control of your learning,
+            engage in interactive lectures, 
+            and access personalized support. 
+            With Brite's student-centered approach, 
+            track your progress, collaborate with peers, 
+            and access resources on-the-go. Elevate your academic 
+            potential with Brite and unleash your success.
+          </p>
+  
+          <a href="#" class="cta-btn">Learn More</a>
+        </div>
+        <div class="student-images">
+          <img
+            src="./assets/images/student-questions.svg"
+            alt="Student Questions Screen"
+            class="phone-img"
+          />
+          <img
+            src="./assets/images/student-feedback.svg"
+            alt="Student Feedback Screen"
+            class="phone-img"
+          />
+        </div>
+      </div>
     </section>
 
-    <section class="section-container" id="contactSection">
+    <section class="section-container" id="contact">
       
     </section>
 

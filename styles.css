@@ -58,6 +58,14 @@ p, .text-large {
     overflow: hidden;
 }
 
+.section-container-smaller{
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    padding: 0 10%;
+    overflow: auto;
+}
+
 .cta-btn {
     display: inline-flex;
     justify-content: center;
@@ -72,6 +80,53 @@ p, .text-large {
 
 .blue-text{
     color: #4CA6FA;
+}
+/*             Transitions                */
+.hidden{
+    opacity: 0;
+    transition: all 1s;
+}
+
+.show{
+    opacity: 1;
+}
+
+
+.hidden-return{ /*separating from other hidden elements so that we can query for the ones we want to disappear when not in viewport */
+    opacity: 0;
+    transition: all 1s;
+}
+
+.show-return{
+    opacity: 1;
+}
+
+.hidden-slower{ /* Simply a slower transition */
+    opacity: 0;
+    transition: all 2s;
+}
+
+.show-slower{
+    opacity: 1;
+}
+
+
+
+.hidden-fly{ /*Items will fly into the viewport */
+    opacity: 0;
+    transition: all 1s;
+    transform: translateX(-100%);
+
+}
+
+.show-fly{
+    opacity: 1;
+    transform: translateX(0);
+
+}
+
+.spacer{
+    height:20vh;
 }
 
 /*             Navigation             */

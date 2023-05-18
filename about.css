@@ -249,6 +249,16 @@ nav a {
     min-width: 584px;
 }
 
+#FoundersImg{
+
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    flex-direction: column;
+    text-align: end;
+    flex : 0.5;
+}
+
 #AboutDivContent{
     margin-top:20px;
     height: 100%;
@@ -295,28 +305,24 @@ nav a {
     display: flex;
     align-items: center;
     flex-direction: column;
+    justify-content: center;
 }
 
 #TransitionText{
     display: flex;
     justify-content: center;
     align-items: center;
+    
     flex-direction: column;
+    margin-top:-20px;
 }
 
 #TransitionText h1{
+
     font-size: 70px;
 }
 
 
-#FoundersImg{
-    display: flex;
-    align-items: end;
-    justify-content: center;
-    flex-direction: column;
-    text-align: end;
-    flex : 0.5;
-}
 
 #FoundersImg img{
     width:100%;
@@ -325,7 +331,8 @@ nav a {
 
 
 #Headshots{
-    margin-top:10px;
+    
+    margin-top:30px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;

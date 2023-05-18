@@ -16,7 +16,9 @@
     font-size: 16px;
 }
 
-/*             General Styles             */
+
+
+/*             Transitions                */
 .hidden{
     opacity: 0;
     transition: all 1s;
@@ -27,7 +29,7 @@
 }
 
 
-.hidden-return{
+.hidden-return{ /*separating from other hidden elements so that we can query for the ones we want to disappear when not in viewport */
     opacity: 0;
     transition: all 1s;
 }
@@ -36,7 +38,7 @@
     opacity: 1;
 }
 
-.hidden-slower{
+.hidden-slower{ /* Simply a slower transition */
     opacity: 0;
     transition: all 2s;
 }
@@ -47,9 +49,21 @@
 
 
 
+.hidden-fly{ /*Items will fly into the viewport */
+    opacity: 0;
+    transition: all 2s;
+}
+
+.show-fly{
+    opacity: 1;
+}
+
 .spacer{
     height:20vh;
 }
+
+
+/*             General Styles             */
 
 h1 {
     font-size: 52px;

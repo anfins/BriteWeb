@@ -25,7 +25,7 @@ const observerB = new IntersectionObserver((entries) => { //items given the hidd
 });
 
 
-const observerC = new IntersectionObserver((entries) => {
+const observerC = new IntersectionObserver((entries) => { //simply a longer transition
 
     entries.forEach((entry) => {
         console.log(entry)
@@ -37,12 +37,27 @@ const observerC = new IntersectionObserver((entries) => {
     });
 });
 
+const observerD = new IntersectionObserver((entries) => { //simply a longer transition
+
+    entries.forEach((entry) => {
+        console.log(entry)
+        if(entry.isIntersecting){
+            entry.target.classList.add("show-fly");
+
+        } 
+  
+    });
+});
+
 
 const hiddenElements = document.querySelectorAll(".hidden");
 const hiddenElementsReturn = document.querySelectorAll(".hidden-return");
 const hiddenElementsSlower = document.querySelectorAll(".hidden-slower");
+const hiddenElementsFly = document.querySelectorAll(".hidden-fly");
+
 
 
 hiddenElements.forEach((el) => observer.observe(el));
 hiddenElementsReturn.forEach((el) => observerB.observe(el));
 hiddenElementsSlower.forEach((el) => observerC.observe(el));
+hiddenElementsFly.forEach((el) => observerD.observe(el));

@@ -51,11 +51,15 @@
 
 .hidden-fly{ /*Items will fly into the viewport */
     opacity: 0;
-    transition: all 2s;
+    transition: all 1s;
+    transform: translateX(-100%);
+
 }
 
 .show-fly{
     opacity: 1;
+    transform: translateX(0);
+
 }
 
 .spacer{
@@ -120,6 +124,11 @@ h2 {
     color: rgb(var(--blue));
 }
 
+
+.blue-background{
+    background-color: rgb(var(--blue));
+}
+
 .section-container {
     position: relative;
     width: 100%;
@@ -156,6 +165,11 @@ h2 {
 
 .blue-text{
     color: #4CA6FA;
+}
+
+.medium-img{
+    width:80%;
+    height: auto;
 }
 
 /*             Navigation             */
@@ -241,7 +255,7 @@ nav a {
 /*             About HTML             */
 
 
-#About-Text{
+#AboutText{
     width: 100%;
     display: flex;
     justify-content: center;
@@ -249,29 +263,28 @@ nav a {
     flex-direction: column;
 }
 
-#About-Text h1{
+#AboutText h1{
     font-size: 70px;
 }
-#founders-img{
-    width:100%;
-}
-#About-Div-Content{
+#AboutDivContent{
     margin-top:20px;
     display: flex;
     flex-direction: row;
 }
 
-#About-Para{
+#AboutPara{
     flex : 0.5;
 }
 
-#About-Para p{
+#AboutPara p{
     margin-top: 10px;
 }
 
-#About-Tagline{
+#FoundersImg{
     display: flex;
-    align-items: center;
+    align-items: end;
+    justify-content: center;
+    flex-direction: column;
     text-align: end;
     flex : 0.5;
 }

@@ -210,6 +210,10 @@ nav a {
     .text-medium {
         font-size: 17px;
     }
+    .text-small {
+        font-size: 12px;
+    }
+
 
     .nav-logo {
         height: 2em;

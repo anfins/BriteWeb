@@ -67,6 +67,9 @@
 #AboutPara p{
     margin-top: 10px;
 }
+#BuiltByPara{
+    width:80%;
+}
 
 #ReadMoreButton{
 

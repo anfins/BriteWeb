@@ -261,7 +261,6 @@ nav a {
     flex : 0.5;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
     overflow:auto;
 }
@@ -270,12 +269,30 @@ nav a {
     margin-top: 10px;
 }
 
+#ReadMoreButton{
+
+    color : white;
+    background-color: #4CA6FA;
+    border: none;
+    border-radius: 10px;
+    width: 20%;
+    height: 6%;
+    margin-top: 10px;
+}
+
+#ReadMoreButton:hover{
+    cursor: pointer;
+}
+#ReadMoreButton a{
+    text-decoration: none;
+    color: white;
+
+}
 
 /*             Founders Section             */
 
 #Founders{
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
 }
@@ -305,7 +322,6 @@ nav a {
     width:100%;
     height: auto;
 }
-
 
 
 #Headshots{

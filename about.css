@@ -209,25 +209,17 @@ nav a {
 
 /*             About HTML             */
 
-#About-Div-Header{
-    display: flex;
-    flex-direction: row;
-    overflow: auto;
-    margin-top: 10px;
-}
 
 #About-Text{
-    flex:1.3;
+    width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
 }
 
 #About-Text h1{
     font-size: 70px;
-}
-#About-Img{
-    flex:1;
 }
 #founders-img{
     width:100%;

@@ -1,3 +1,190 @@
+@font-face {
+    font-family: Inter;
+    src: url("./assets/fonts/Inter/Inter-VariableFont_slnt\,wght.ttf");
+    font-style: normal;
+}
+
+:root {
+    --blue: 76, 166, 250;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter;
+    font-size: 16px;
+}
+
+/*             General Styles             */
+.hidden{
+    opacity: 0;
+    transition: all 1s;
+}
+
+.show{
+    opacity: 1;
+}
+
+
+.hiddenB{
+    opacity: 0;
+    transition: all 1s;
+    transform: translateX(-100%);
+}
+
+.showB{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
+.spacer{
+    height:20vh;
+}
+
+h1 {
+    font-size: 52px;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 600;
+}
+.heading-1 {
+    font-size: 52px;
+    font-weight: 700;
+}
+
+.heading-2 {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.text-large {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.text-medium {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.text-small {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.right-caption {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+
+.left-caption{   
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.text-colored {
+    color: rgb(var(--blue));
+}
+
+.section-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 0 10%;
+    overflow: auto;
+}
+
+.section-container-smaller{
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    padding: 0 10%;
+    overflow: auto;
+}
+
+.cta-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5em 1em;
+    border-radius: .5em;
+    background-color: rgb(var(--blue)) !important;
+    color: #fff !important;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.phone-img {
+    max-height: 80vh !important;
+    filter: drop-shadow(0 8px 24px rgba(0, 0, 0, 0.4));
+}
+
+
+.blue-text{
+    color: #4CA6FA;
+}
+
+/*             Navigation             */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 8px 0;
+}
+
+nav a {
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo {
+    height: 3em;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+    list-style-type: none;
+    overflow: hidden;
+    transition: max-height .15s ease-in;
+    z-index: 1;
+}
+
+.nav-links a {
+    color: #000;
+    text-decoration: none;
+    transition: all 0.15s ease-in;
+    border-bottom: 2px solid rgb(var(--blue), 0);
+}
+
+.nav-links a:hover {
+    border-bottom: 2px solid rgb(var(--blue), 1);
+}
+
+#menu-check, .menu-bars {
+    display: none;
+}
+
+.menu-bars svg {
+    fill: #000;
+}
+
 /*             Hero Section             */
 
 .hero-content {
@@ -5,10 +192,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 32px 0;
-}
-
-.hero-content .phone-img {
-    width: 25%;
+    height: 80%;
 }
 
 .hero-text {
@@ -25,17 +209,22 @@
 
 /*             About HTML             */
 
-#About-Div{
+#About-Div-Header{
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
     overflow: auto;
     margin-top: 10px;
 }
 
-.about-text{
+#About-Text{
     flex:1.3;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#About-Text h1{
+    font-size: 70px;
 }
 #About-Img{
     flex:1;
@@ -43,15 +232,74 @@
 #founders-img{
     width:100%;
 }
+#About-Div-Content{
+    margin-top:20px;
+    display: flex;
+    flex-direction: row;
+}
 
+#About-Para{
+    flex : 0.5;
+}
+
+#About-Para p{
+    margin-top: 10px;
+}
+
+#About-Tagline{
+    display: flex;
+    align-items: center;
+    text-align: end;
+    flex : 0.5;
+}
+
+#Headshots{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headshot{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.headshot p{
+    text-align: center;
+}
+
+.headshot img{
+
+    width: 80%;
+
+}
 
 /*             Media Queries             */
 
 @media only screen and (max-width: 1200px) {
+    .survey-images .phone-img {
+        width: 50%;
+        max-width: none;
+    }
+  
 
 }
 
-@media only screen and (max-width: 992px) { 
+@media only screen and (max-width: 992px) {
+    .hero-content .phone-img {
+        display: none;
+    }
+
+    .survey-images .phone-img {
+        display: none;
+        width: 90%;
+    }
+
+    .survey-images .phone-img:first-of-type {
+        display: block;
+    }
     #About-Div{
         flex-direction: column;
     }
@@ -61,10 +309,97 @@
 }
 
 @media only screen and (max-width: 768px) {
+    h1 {
+        font-size: min(8vw, 48px);
+    }
+
+    h2 {
+        font-size: min(7vw, 36px);
+    }
+    .heading-1{
+        font-size: min(8vw, 48px);
+    }
+
+    .heading-2 {
+        font-size: min(7vw, 36px);
+    }
+    p{
+        font-size: 24px;
+    }
+    .text-large {
+        font-size: 25px;
+    }
+
+    .text-medium {
+        font-size: 24px;
+    }
+
+    .nav-logo {
+        height: 2em;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translateX(100%);
+
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 16px;
+
+        width: 70vw;
+        max-width: 400px;
+        height: 100vh;
+        padding: 64px 32px 32px 32px;
+
+        background-color: #fff;
+        opacity: 0;
+        box-shadow: -4px 0 16px -2px rgba(0, 0, 0, 0.4);
+        transition: all 0.15s ease-in;
+    }
+
+    .nav-links li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .nav-links a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 12px 0;
+        border: none !important;
+        border-radius: 8px;
+        background-color: rgba(var(--blue), 0.1);
+    }
+
+    .bottom-link {
+        margin-top: auto;
+    }
+
+    #menu-check:checked ~ .nav-links {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    
+    .menu-bars {
+        display: block;
+        width: 1.25em;
+        height: 1.25em;
+        z-index: 2;
+        cursor: pointer;
+    }
+
     .hero-text {
         width: auto;
         min-width: auto;
     }
+
 }
 
 @media only screen and (max-width: 600px) {

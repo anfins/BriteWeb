@@ -1,4 +1,12 @@
-  
+    
+const observerNormal = new IntersectionObserver((entries) => { // items given the hidden class will appear when seen on screen for the first time and stay on the screen until reload
+
+    entries.forEach((entry) => {
+        if(entry.isIntersecting) {
+            entry.target.classList.add("show"); // adds transition
+        } 
+    });
+});
 const observerLeft = new IntersectionObserver((entries) => { // items given the hidden class will appear when seen on screen for the first time and stay on the screen until reload
 
     entries.forEach((entry) => {
@@ -56,6 +64,7 @@ const observerD = new IntersectionObserver((entries) => { //simply a longer tran
     });
 });
 
+const hiddenElements = document.querySelectorAll(".hidden");
 
 const hiddenLeftElements = document.querySelectorAll(".hidden-left");
 const hiddenRightElements = document.querySelectorAll(".hidden-right");
@@ -63,7 +72,7 @@ const hiddenElementsReturn = document.querySelectorAll(".hidden-return");
 const hiddenElementsSlower = document.querySelectorAll(".hidden-slower");
 const hiddenElementsFly = document.querySelectorAll(".hidden-fly");
 
-
+hiddenElements.forEach((el) => observerNormal.observe(el));
 hiddenLeftElements.forEach((el) => observerLeft.observe(el));
 hiddenRightElements.forEach((el) => observerRight.observe(el));
 hiddenElementsReturn.forEach((el) => observerB.observe(el));

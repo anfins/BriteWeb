@@ -205,7 +205,7 @@
 }
 
 
-#DemoRequest{
+#DemoRequestButton{
     border-radius: 10px;
     font-weight: bold;
     color:white;
@@ -215,6 +215,16 @@
     height: 15%;
     margin-top:15px;
 }
+#DemoRequestButton:hover{
+    cursor: pointer;
+}
+
+
+#DemoRequestButton a{
+    text-decoration: none;
+    color: white;
+}
+
 
 /*             Media Queries             */
 

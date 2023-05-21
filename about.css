@@ -75,21 +75,21 @@
     width: 70%;
 }
 
-#ReadMoreButton{
+.read-more-button{
 
     color : white;
     background-color: #4CA6FA;
     border: none;
     border-radius: 10px;
-    width: 20%;
-    height: 6%;
+    width: 25%;
+    height: 10%;
     margin-top: 10px;
 }
 
-#ReadMoreButton:hover{
+.read-more-button:hover{
     cursor: pointer;
 }
-#ReadMoreButton a{
+.read-more-button a{
     text-decoration: none;
     color: white;
 

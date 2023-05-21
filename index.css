@@ -79,6 +79,10 @@
     align-items: center;
 }
 
+.student-images .phone-img {
+    max-width: 55%;
+}
+
 .student-text {
     color: white;
     display: flex;
@@ -86,6 +90,7 @@
     justify-content: center;
     align-items: flex-start;
     gap: 32px;
+    max-width: 348px;
 }
 
 /*          Contact Section              */
@@ -108,11 +113,28 @@
     .educator-text {
         max-width: 600px;
     }
+
+    .student-images .phone-img {
+        display: none;
+        max-width: none;
+    }
+
+    .student-images .phone-img:first-of-type {
+        display: block;
+    }
 }
 
 @media only screen and (max-width: 992px) {
     .hero-content .phone-img {
         display: none;
+    }
+
+    .student-images .phone-img {
+        max-width: 100%;
+    }
+
+    .student-text {
+        max-width: 320px;
     }
 }
 
@@ -127,6 +149,19 @@
     }
 
     .educator-text {
+        max-width: 500px;
+    }
+
+    .student-images .phone-img:first-of-type {
+        display: none;
+    }
+
+    .student-content {
+        justify-content: center;
+        gap: 0;
+    }
+
+    .student-text {
         max-width: 500px;
     }
 }

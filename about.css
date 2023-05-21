@@ -45,7 +45,7 @@
     justify-content: center;
     flex-direction: column;
     text-align: end;
-    flex : 0.4;
+    flex : 0.5;
 }
 
 #AboutDivContent{
@@ -68,7 +68,7 @@
     margin-top: 10px;
 }
 #BuiltByPara{
-    width:100%;
+    width:80%;
 }
 
 #CoFoundersText{

@@ -91,11 +91,96 @@ p, .text-large {
 .blue-text{
     color: #4CA6FA;
 }
+.white-text{
+    color: white;
+}
+.text-colored {
+    color: rgb(var(--blue));
+}
+
+
+.blue-background{
+    background-color: rgba(var(--blue), 0.1);
+}
+
+
 
 .dark-background{
     color:white;
     background-color: rgb(var(--dark-gray));
 }
+
+/*             Footers           */
+
+#FooterA{
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#FooterB{
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+#CallToAction{
+    width: 50%;
+    flex:1;
+}
+#ContactDemo{
+    flex:1;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+
+#ContactUs{
+    width:50%;
+}
+
+#RequestDemoDiv{
+    flex:1;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#DemoRequestButton{
+    border-radius: 10px;
+    font-weight: bold;
+    color:white;
+    background-color: rgb(var(--blue));
+    border: none;
+    width:50%;
+    height: 15%;
+    margin-top:15px;
+}
+#DemoRequestButton:hover{
+    cursor: pointer;
+}
+
+
+#DemoRequestButton a{
+    text-decoration: none;
+    color: white;
+}
+
 
 /*             Transitions                */
 .hidden{
@@ -167,7 +252,18 @@ nav a {
     height: 3em;
 }
 
-.nav-links {
+.nav-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+    list-style-type: none;
+    overflow: hidden;
+    transition: max-height .15s ease-in;
+    z-index: 1;
+}
+
+.nav-links-white{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -184,6 +280,13 @@ nav a {
     transition: all 0.15s ease-in;
     border-bottom: 2px solid rgb(var(--blue), 0);
 }
+.nav-links-white a {
+    color:white;
+    text-decoration: none;
+    transition: all 0.15s ease-in;
+    border-bottom: 2px solid rgb(var(--blue), 0);
+}
+
 
 .nav-links a:hover {
     border-bottom: 2px solid rgb(var(--blue), 1);

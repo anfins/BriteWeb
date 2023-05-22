@@ -1,3 +1,4 @@
+addScrollTransitions('hidden', 'show');
 addScrollTransitions('hidden-left', 'show-left');
 addScrollTransitions('hidden-right', 'show-right');
 addScrollTransitions('hidden-return', 'show-return');

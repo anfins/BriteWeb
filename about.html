@@ -1,97 +1,171 @@
 <!DOCTYPE html>
 
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link rel="stylesheet" href="about.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <section id="hero-section">
+      <nav>
+        <a href="index.html">
+          <img class="nav-logo" src="./assets/images/logo.svg" alt="Brite" />
+        </a>
 
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>About</title>
-        <link rel="stylesheet" href="about.css">
+        <input type="checkbox" id="menu-check" />
+        <label class="menu-bars" for="menu-check">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+            <path
+              d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+            />
+          </svg>
+        </label>
 
-    </head>
-    <body>
-        <section id="hero-section" class="section-container">
-            <nav>
-              <a href="index.html">
-                <img class="nav-logo" src="./assets/images/logo.svg" alt="Brite" />
-              </a>
-        
-              <input type="checkbox" id="menu-check">
-              <label class="menu-bars" for="menu-check">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
-              </label>
-        
-              <ul class="nav-links">
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-                <li>
-                    <a href="about.html">About</a>
-                </li>
-                <li>
-                  <a href="contact.html">Contact</a>
-              </li>
-                <li class="bottom-link">
-                    <a href="#" class="cta-btn">Login</a>
-                </li>
-              </ul>
-            </nav>
+        <ul class="nav-links">
+          <li>
+            <a href="./index.html">Home</a>
+          </li>
+          <li>
+            <a href="./about.html">About</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+          <li class="bottom-link">
+            <a href="./index.html#request-a-demo" class="cta-btn"
+              >Request a Demo</a
+            >
+          </li>
+        </ul>
+      </nav>
 
-            <div class = "hero-content">
-                <div id = "AboutDivContent">
-                    <div id = "AboutPara">
-                        <h1>Built By <span class = "heading-1 blue-text">Current Students</span></h1>
-                        <p>We built an app to give students a voice in the classroom, and provide educators and administrators with critical data. </p>
-    
-                    </div>
-                    <div id = "FoundersImg">
-                        <img src = "assets/images/foundersTCU.JPEG">
-                        <p>Brite Co-Founders current college students: Jorden Anfinson, Lukas Thackery, Nate Wimer, and Craig Dombrowski</p>
-                    </div>
-                   
-                </div>
+      <div class="hero-content" id="MissionDiv">
+        <div id="MissionDivText" class="hidden-left">
+          <h1>Our Mission</h1>
+          <p class="text-medium">
+            To solve the disconnect between students and teachers across the
+            country by providing cutting edge data to educators, and providing
+            students a platform to anonymously provide daily feedback and
+            interact with their peers.
+          </p>
+        </div>
+        <div id="MissionDivImg">
+          <img id="AboutImg" src="assets/images/aboutimage.svg" />
+        </div>
+      </div>
+    </section>
+    <div class="spacer"></div>
+
+    <section class="section-container-medium hidden-left blue-background">
+      <div id="FoundersContent">
+        <div id="AboutDivContent">
+          <div id="AboutPara" class="hidden-left">
+            <h1>
+              Built By <span class="heading-1 blue-text">Current Students</span>
+            </h1>
+            <div id="BuiltByPara">
+              <p class="text-medium">
+                Students like us struggled to engage in class, we decided to do
+                something about it.
+              </p>
             </div>
-       
-        </section>
-      
 
-      
-       
-    
-        <section id = "Founders" class = "section-container hidden-fly blue-background">
+            <button class="read-more-button">
+              <a
+                class="text-medium"
+                href="https://media.statler.wvu.edu/news/2023/04/28/statler-college-students-win-west-virginia-business-plan-competition"
+                >Read More</a
+              >
+            </button>
+          </div>
+          <div id="FoundersImg">
+            <img src="assets/images/foundersTCU.JPEG" />
+          </div>
+        </div>
+      </div>
+    </section>
 
-            <div id = "TransitionText">
-                <h1>College is hard,</h1>
-                <h1 class= "blue-text hidden-slower">we understand.</h1>                    
-            </div>
-            <div id = "Headshots">
-                <div class = "headshot">
-            
-                    <img src = "assets/images/team/Nate.png">
-                    <p>Nate Wimer</p>
-                    <p>Co-Chief Executive Officer</p>
-                </div>
-                <div class = "headshot">
-                    <img src = "assets/images/team/Lukas.png">
-                    <p>Lukas Thackery</p>
-                    <p>Co-Chief Executive Officer</p>
-                </div>
-                <div class = "headshot">
-                    <img src = "assets/images/team/Craig.png">
-                    <p>Craig Dombrowski</p>
-                    <p>Chief Technical Officer</p>
-                </div>
-                <div class = "headshot">
-                    <img src = "assets/images/team/Jorden.png">
-                    <p>Jorden Anfinson</p>
-                    <p>Chief Product Officer</p>
-                </div>
-            </div>
-            
-        </section>
-        
-    <script src = "script.js"></script>
+    <section id="Founders" class="hidden dark-background">
+      <div id="TransitionText">
+        <h1>College is hard,</h1>
+        <h1 class="blue-text hidden-slower">we understand.</h1>
+      </div>
+      <div id="Headshots" class="hidden-slower">
+        <div class="headshot">
+          <img src="assets/images/team/Nate.png" />
+          <p class="text-medium">Nate Wimer</p>
+          <p class="text-small">WVU '24</p>
+          <p class="text-small">Co-Chief Executive Officer</p>
+        </div>
+        <div class="headshot">
+          <img src="assets/images/team/Lukas.png" />
+          <p class="text-medium">Lukas Thackery</p>
+          <p class="text-small">WVU '23</p>
+          <p class="text-small">Co-Chief Executive Officer</p>
+        </div>
+        <div class="headshot">
+          <img src="assets/images/team/Craig.png" />
+          <p class="text-medium">Craig Dombrowski</p>
+          <p class="text-small">WVU '24</p>
+          <p class="text-small">Chief Technical Officer</p>
+        </div>
+        <div class="headshot">
+          <img src="assets/images/team/Jorden.png" />
+          <p class="text-medium">Jorden Anfinson</p>
+          <p class="text-small">Denison '24</p>
+          <p class="text-small">Chief Product Officer</p>
+        </div>
+      </div>
+    </section>
 
-    </body>
+    <section id="FooterA">
+      <h1 id="CallToAction">
+        <span class="blue-text heading-1">Brighten</span> Your Classroom
+        Experience
+      </h1>
+      <div id="ContactDemo">
+        <div id="ContactUs">
+          <h2>Contact Us</h2>
+          <p class="text-large">info@brite.company</p>
+        </div>
+        <button class="text-large" id="DemoRequestButton">
+          <a
+            class="text-large"
+            id="DemoRequest"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSd_aWOZ629I1yppbAmLN1G6olJT3hearA4tmX2PeQ_gFU3-0A/viewform"
+            >Join Waitlist</a
+          >
+        </button>
+      </div>
+    </section>
+
+    <section class="section-container blue-background" id="FooterB">
+      <div id="FooterBLeft">
+        <a href="index.html">
+          <img class="nav-logo" src="./assets/images/logo.svg" alt="Brite" />
+        </a>
+      </div>
+      <div id="FooterBRight">
+        <ul class="nav-links">
+          <li>
+            <a href="./index.html">Home</a>
+          </li>
+          <li>
+            <a href="./about.html">About</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
 </html>

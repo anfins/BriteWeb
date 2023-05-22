@@ -34,6 +34,7 @@ h1, .heading-1 {
     font-weight: 700;
 }
 
+
 h2, .heading-2 {
     font-size: 36px;
     font-weight: 700;
@@ -58,6 +59,23 @@ p, .text-large {
     color: rgb(var(--blue));
 }
 
+.section-container-medium {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    padding: 0 10%;
+    overflow: auto;
+}
+
+.section-container-smaller{
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    padding: 0 10%;
+    overflow: auto;
+}
+
+
 .cta-btn {
     display: inline-flex;
     justify-content: center;
@@ -72,6 +90,59 @@ p, .text-large {
 
 .blue-text{
     color: #4CA6FA;
+}
+
+.dark-background{
+    color:white;
+    background-color: rgb(var(--dark-gray));
+}
+
+/*             Transitions                */
+.hidden{
+    opacity: 0;
+    transition: all 1s;
+}
+
+.show{
+    opacity: 1;
+}
+
+
+.hidden-return{ /*separating from other hidden elements so that we can query for the ones we want to disappear when not in viewport */
+    opacity: 0;
+    transition: all 1s;
+}
+
+.show-return{
+    opacity: 1;
+}
+
+.hidden-slower{ /* Simply a slower transition */
+    opacity: 0;
+    transition: all 2s;
+}
+
+.show-slower{
+    opacity: 1;
+}
+
+
+
+.hidden-fly{ /*Items will fly into the viewport */
+    opacity: 0;
+    transition: all 1s;
+    transform: translateX(-100%);
+
+}
+
+.show-fly{
+    opacity: 1;
+    transform: translateX(0);
+
+}
+
+.spacer{
+    height:5vh;
 }
 
 /*             Navigation             */
@@ -158,6 +229,10 @@ nav a {
     .text-medium {
         font-size: 17px;
     }
+    .text-small {
+        font-size: 12px;
+    }
+
 
     .nav-logo {
         height: 2em;
@@ -228,6 +303,11 @@ nav a {
 
 /*          Scroll Transitions           */
 
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transition: all 1s;
+}
 .hidden-left, .hidden-right {
     opacity: 0;
     filter: blur(5px);
@@ -246,6 +326,11 @@ nav a {
     opacity: 1;
     filter: blur(0);
     transform: translateX(0%);
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
 }
 
 @media only screen and (max-width: 600px) {

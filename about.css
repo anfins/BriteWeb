@@ -4,121 +4,8 @@
     font-style: normal;
 }
 
-:root {
-    --blue: 76, 166, 250;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Inter;
-    font-size: 16px;
-}
 
 
-
-/*             Transitions                */
-.hidden{
-    opacity: 0;
-    transition: all 1s;
-}
-
-.show{
-    opacity: 1;
-}
-
-
-.hidden-return{ /*separating from other hidden elements so that we can query for the ones we want to disappear when not in viewport */
-    opacity: 0;
-    transition: all 1s;
-}
-
-.show-return{
-    opacity: 1;
-}
-
-.hidden-slower{ /* Simply a slower transition */
-    opacity: 0;
-    transition: all 2s;
-}
-
-.show-slower{
-    opacity: 1;
-}
-
-
-
-.hidden-fly{ /*Items will fly into the viewport */
-    opacity: 0;
-    transition: all 1s;
-    transform: translateX(-100%);
-
-}
-
-.show-fly{
-    opacity: 1;
-    transform: translateX(0);
-
-}
-
-.spacer{
-    height:20vh;
-}
-
-
-/*             General Styles             */
-
-h1 {
-    font-size: 52px;
-    font-weight: 700;
-}
-
-h2 {
-    font-size: 36px;
-    font-weight: 600;
-}
-.heading-1 {
-    font-size: 52px;
-    font-weight: 700;
-}
-
-.heading-2 {
-    font-size: 36px;
-    font-weight: 600;
-}
-
-.text-large {
-    font-size: 24px;
-    font-weight: 400;
-}
-
-.text-medium {
-    font-size: 20px;
-    font-weight: 400;
-}
-
-.text-small {
-    font-size: 16px;
-    font-weight: 400;
-}
-
-.right-caption {
-    display: flex;
-    flex-flow: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 24px;
-}
-
-
-.left-caption{   
-    display: flex;
-    flex-flow: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 24px;
-}
 
 .text-colored {
     color: rgb(var(--blue));
@@ -129,115 +16,9 @@ h2 {
     background-color: rgba(var(--blue), 0.1);
 }
 
-.section-container {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    padding: 0 10%;
-    overflow: auto;
-}
-
-.section-container-smaller{
-    position: relative;
-    width: 100%;
-    height: 40vh;
-    padding: 0 10%;
-    overflow: auto;
-}
-
-.cta-btn {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    padding: .5em 1em;
-    border-radius: .5em;
-    background-color: rgb(var(--blue)) !important;
-    color: #fff !important;
-    font-weight: 600;
-    text-decoration: none;
-}
-
-.phone-img {
-    max-height: 80vh !important;
-    filter: drop-shadow(0 8px 24px rgba(0, 0, 0, 0.4));
-}
 
 
-.blue-text{
-    color: #4CA6FA;
-}
-
-.bold-text{
-    font-weight: bold;
-}
-
-/*             Navigation             */
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding: 8px 0;
-}
-
-nav a {
-    display: flex;
-    align-items: center;
-}
-
-.nav-logo {
-    height: 3em;
-}
-
-.nav-links {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 2em;
-    list-style-type: none;
-    overflow: hidden;
-    transition: max-height .15s ease-in;
-    z-index: 1;
-}
-
-.nav-links a {
-    color: #000;
-    text-decoration: none;
-    transition: all 0.15s ease-in;
-    border-bottom: 2px solid rgb(var(--blue), 0);
-}
-
-.nav-links a:hover {
-    border-bottom: 2px solid rgb(var(--blue), 1);
-}
-
-#menu-check, .menu-bars {
-    display: none;
-}
-
-.menu-bars svg {
-    fill: #000;
-}
-
-
-
-.bottom-scroll-indicator{
-    height:10%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
 /*             Hero Section             */
-
-.hero-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 32px 0;
-    height: 70%;
-}
 
 .hero-text {
     display: flex;
@@ -247,6 +28,59 @@ nav a {
     gap: 32px;
     width: 584px;
     min-width: 584px;
+}
+
+
+#MissionDiv{
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+
+}
+#MissionDivText{
+    flex:1.2;
+}
+#MissionDivText p{
+    margin-top:10px;
+    width:80%;
+}
+
+#MissionDivImg{
+    flex:1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#AboutImg{
+
+    width: 90%;
+
+}
+
+/*              Founders Section        */
+
+
+#FoundersContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 0;
+    height: 100%;
+}
+
+
+#FoundersImg{
+
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    flex-direction: column;
+    text-align: end;
+    flex : 0.5;
 }
 
 #AboutDivContent{
@@ -261,7 +95,6 @@ nav a {
     flex : 0.5;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
     overflow:auto;
 }
@@ -269,37 +102,62 @@ nav a {
 #AboutPara p{
     margin-top: 10px;
 }
+#BuiltByPara{
+    width:80%;
+}
+
+#CoFoundersText{
+    width: 70%;
+}
+
+.read-more-button{
+
+    color : white;
+    background-color: #4CA6FA;
+    border: none;
+    border-radius: 10px;
+    width: 25%;
+    height: 10%;
+    margin-top: 10px;
+}
+
+.read-more-button:hover{
+    cursor: pointer;
+}
+.read-more-button a{
+    text-decoration: none;
+    color: white;
+}
+
 
 
 /*             Founders Section             */
 
 #Founders{
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
+    justify-content: center;
 }
 
 #TransitionText{
     display: flex;
     justify-content: center;
     align-items: center;
+    
     flex-direction: column;
+    margin-top:-20px;
 }
 
 #TransitionText h1{
+
     font-size: 70px;
 }
 
-
 #FoundersImg{
-    display: flex;
-    align-items: end;
-    justify-content: center;
-    flex-direction: column;
-    text-align: end;
-    flex : 0.5;
+    order:1;
 }
+
 
 #FoundersImg img{
     width:100%;
@@ -307,9 +165,9 @@ nav a {
 }
 
 
-
 #Headshots{
-    margin-top:10px;
+    
+    margin-top:30px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -330,7 +188,82 @@ nav a {
 
     width: 80%;
 
+
 }
+
+
+
+/*             Call to Action           */
+
+#FooterA{
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#FooterB{
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+#CallToAction{
+    width: 50%;
+    flex:1;
+}
+#ContactDemo{
+    flex:1;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+
+#ContactUs{
+    width:50%;
+}
+
+#RequestDemoDiv{
+    flex:1;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#DemoRequestButton{
+    border-radius: 10px;
+    font-weight: bold;
+    color:white;
+    background-color: rgb(var(--blue));
+    border: none;
+    width:50%;
+    height: 15%;
+    margin-top:15px;
+}
+#DemoRequestButton:hover{
+    cursor: pointer;
+}
+
+
+#DemoRequestButton a{
+    text-decoration: none;
+    color: white;
+}
+
 
 /*             Media Queries             */
 
@@ -344,21 +277,18 @@ nav a {
 }
 
 @media only screen and (max-width: 992px) {
-    .hero-content .phone-img {
-        display: none;
-    }
-
-    .survey-images .phone-img {
-        display: none;
-        width: 90%;
-    }
-
-    .survey-images .phone-img:first-of-type {
-        display: block;
-    }
-    #About-Div{
+   
+    #MissionDiv{
         flex-direction: column;
     }
+    #AboutImg{
+        width:80%;
+    }
+    #MissionDivText{
+        margin-top: 10px;
+        flex:0.5;
+    }
+
     #About-Header{
         font-size: 30px;
     }

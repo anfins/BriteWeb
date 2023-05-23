@@ -25,6 +25,10 @@
 }
 #MissionDivText {
   flex: 1.2;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: left;
 }
 #MissionDivText p {
   margin-top: 10px;
@@ -205,7 +209,22 @@
 @media only screen and (max-width: 992px) {
   #MissionDiv {
     flex-direction: column;
+    height: 100%;
   }
+  #MissionDivImg{
+    display: none;
+  }
+
+  #AboutDivContent{
+    flex-direction: column;
+    justify-content: start;
+  }
+  #AboutPara{
+    justify-content: start;
+    flex:0.3;
+  }
+
+  
   #AboutImg {
     width: 80%;
   }

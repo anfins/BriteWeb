@@ -171,6 +171,7 @@ nav {
     align-items: center;
     width: 100%;
     padding: 8px 10%;
+    background-color: white;
 }
 
 nav a {
@@ -182,18 +183,7 @@ nav a {
     height: 3em;
 }
 
-.nav-links{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 2em;
-    list-style-type: none;
-    overflow: hidden;
-    transition: max-height .15s ease-in;
-    z-index: 1;
-}
-
-.nav-links-white{
+.nav-links {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -316,9 +306,13 @@ nav a {
         font-size: 12px;
     }
 
-
     .nav-logo {
         height: 2em;
+    }
+
+    nav {
+        position: fixed;
+        z-index: 1;
     }
 
     .nav-links {

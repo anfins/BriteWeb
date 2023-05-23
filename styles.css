@@ -91,6 +91,19 @@ p, .text-large {
 .blue-text{
     color: #4CA6FA;
 }
+.white-text{
+    color: white;
+}
+.text-colored {
+    color: rgb(var(--blue));
+}
+
+
+.blue-background{
+    background-color: rgba(var(--blue), 0.1);
+}
+
+
 
 .dark-background{
     color:white;
@@ -169,7 +182,18 @@ nav a {
     height: 3em;
 }
 
-.nav-links {
+.nav-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+    list-style-type: none;
+    overflow: hidden;
+    transition: max-height .15s ease-in;
+    z-index: 1;
+}
+
+.nav-links-white{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -186,6 +210,13 @@ nav a {
     transition: all 0.15s ease-in;
     border-bottom: 2px solid rgb(var(--blue), 0);
 }
+.nav-links-white a {
+    color:white;
+    text-decoration: none;
+    transition: all 0.15s ease-in;
+    border-bottom: 2px solid rgb(var(--blue), 0);
+}
+
 
 .nav-links a:hover {
     border-bottom: 2px solid rgb(var(--blue), 1);

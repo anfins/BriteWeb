@@ -75,6 +75,7 @@
   flex-direction: column;
   justify-content: center;
   overflow: auto;
+  align-items: flex-start;
 }
 
 #AboutPara p {
@@ -159,7 +160,7 @@
   width: 80%;
 }
 
-/*             Contact           */
+/*             contact           */
 
 #contact .email-link {
   color: black;

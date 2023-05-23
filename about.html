@@ -14,39 +14,40 @@
     />
   </head>
   <body>
+    <nav>
+      <a href="index.html">
+        <img class="nav-logo" src="./assets/images/logo.svg" alt="Brite" />
+      </a>
+
+      <input type="checkbox" id="menu-check" />
+      <label class="menu-bars" for="menu-check">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+          <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+          <path
+            d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+          />
+        </svg>
+      </label>
+
+      <ul class="nav-links">
+        <li>
+          <a href="./index.html">Home</a>
+        </li>
+        <li>
+          <a href="./about.html">About</a>
+        </li>
+        <li>
+          <a href="./index.html#contact">Contact</a>
+        </li>
+        <li class="bottom-link">
+          <a href="./index.html#request-a-demo" class="cta-btn"
+            >Request a Demo</a
+          >
+        </li>
+      </ul>
+    </nav>
     <section id="hero-section">
-      <nav>
-        <a href="index.html">
-          <img class="nav-logo" src="./assets/images/logo.svg" alt="Brite" />
-        </a>
 
-        <input type="checkbox" id="menu-check" />
-        <label class="menu-bars" for="menu-check">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-            <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-            <path
-              d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
-            />
-          </svg>
-        </label>
-
-        <ul class="nav-links">
-          <li>
-            <a href="./index.html">Home</a>
-          </li>
-          <li>
-            <a href="./about.html">About</a>
-          </li>
-          <li>
-            <a href="./index.html#contact">Contact</a>
-          </li>
-          <li class="bottom-link">
-            <a href="./index.html#request-a-demo" class="cta-btn"
-              >Request a Demo</a
-            >
-          </li>
-        </ul>
-      </nav>
 
       <div class="hero-content" id="MissionDiv">
         <div id="MissionDivText" class="hidden-left">
@@ -77,14 +78,8 @@
                 something about it.
               </p>
             </div>
-
-            <button class="read-more-button">
-              <a
-                class="text-medium"
-                href="https://media.statler.wvu.edu/news/2023/04/28/statler-college-students-win-west-virginia-business-plan-competition"
-                >Read More</a
-              >
-            </button>
+            <a class="cta-btn" href="https://media.statler.wvu.edu/news/2023/04/28/statler-college-students-win-west-virginia-business-plan-competition">Read More</a>
+         
           </div>
           <div id="FoundersImg">
             <img src="assets/images/foundersTCU.JPEG" />

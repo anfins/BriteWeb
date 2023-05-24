@@ -221,6 +221,32 @@ nav a {
     fill: #000;
 }
 
+/*         Hero Section          */
+
+#hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 0;
+    width: 100%;
+}
+
+.hero-text {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 32px;
+    width: 584px;
+    min-width: 584px;
+}
+
 /*          Contact             */
 
 #contact {

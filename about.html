@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About</title>
-    <link rel="stylesheet" href="about.css" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./about.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -46,70 +46,74 @@
         </li>
       </ul>
     </nav>
+
     <section id="hero-section">
-      <div class="hero-content" id="MissionDiv">
-        <div id="MissionDivText" class="hidden-left">
+      <div class="hero-content">
+        <div class="hero-text hidden-left">
           <h1>Our Mission</h1>
           <p class="text-medium">
             To solve the disconnect between students and teachers across the
-            country by providing cutting edge data to educators, and providing
+            country by providing cutting edge data to educators while providing
             students a platform to anonymously provide daily feedback and
             interact with their peers.
           </p>
         </div>
-        <div id="MissionDivImg">
-          <img id="AboutImg" src="assets/images/aboutimage.svg" />
-        </div>
+        <img id="aboutImg" src="./assets/images/aboutimage.svg" />
       </div>
     </section>
 
-    <section class="section-container-medium hidden-left blue-background">
-      <div id="FoundersContent">
-        <div id="AboutDivContent">
-          <div id="AboutPara" class="hidden-left">
-            <h1>
-              Built By <span class="heading-1 blue-text">Current Students</span>
-            </h1>
-            <div id="BuiltByPara">
-              <p class="text-medium">
-                Students like us struggled to engage in class, we decided to do
-                something about it.
-              </p>
-            </div>
-            <a class="cta-btn" href="https://media.statler.wvu.edu/news/2023/04/28/statler-college-students-win-west-virginia-business-plan-competition">Read More</a>
-         
-          </div>
-          <div id="FoundersImg">
-            <img src="assets/images/foundersTCU.JPEG" />
-          </div>
+    <section class="hidden-left blue-background" id="readMore">
+      <div class="founders-content">
+        <div class="about-text hidden-left">
+          <h1>
+            Built By <span class="heading-1 blue-text">Current Students</span>
+          </h1>
+
+          <p class="text-medium">
+            Students like us struggled to engage in class, we decided to do
+            something about it.
+          </p>
+
+          <a
+            class="cta-btn"
+            href="https://media.statler.wvu.edu/news/2023/04/28/statler-college-students-win-west-virginia-business-plan-competition"
+          >
+            Read More
+          </a>
         </div>
+
+        <img id="foundersImg" src="assets/images/foundersTCU.JPEG" />
       </div>
     </section>
 
-    <section id="Founders" class="hidden dark-background">
-      <div id="TransitionText">
+    <section id="founders" class="hidden dark-background">
+      <div id="foundersHeader">
         <h1>College is hard,</h1>
         <h1 class="blue-text hidden-slower">we understand.</h1>
       </div>
-      <div id="Headshots" class="hidden-slower">
+
+      <div id="headshots" class="hidden-slower">
         <div class="headshot">
           <img src="assets/images/team/Nate.png" />
           <p class="text-medium">Nate Wimer</p>
           <p class="text-small">WVU '24</p>
           <p class="text-small">Co-Chief Executive Officer</p>
         </div>
+
         <div class="headshot">
           <img src="assets/images/team/Lukas.png" />
           <p class="text-medium">Lukas Thackery</p>
           <p class="text-small">WVU '23</p>
           <p class="text-small">Co-Chief Executive Officer</p>
         </div>
+
         <div class="headshot">
           <img src="assets/images/team/Craig.png" />
           <p class="text-medium">Craig Dombrowski</p>
           <p class="text-small">WVU '24</p>
           <p class="text-small">Chief Technical Officer</p>
         </div>
+
         <div class="headshot">
           <img src="assets/images/team/Jorden.png" />
           <p class="text-medium">Jorden Anfinson</p>

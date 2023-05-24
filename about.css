@@ -6,49 +6,22 @@
 
 /*             Hero Section             */
 
-.hero-text {
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 32px;
-  width: 584px;
-  min-width: 584px;
-}
-
-#MissionDiv {
-  height: 80%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-#MissionDivText {
-  flex: 1.2;
+.mission-text {
   display: flex;
   justify-content: center;
   flex-direction: column;
   text-align: left;
-}
-#MissionDivText p {
-  margin-top: 10px;
-  width: 80%;
+  gap: 32px;
 }
 
-#MissionDivImg {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+#aboutImg {
+  max-width: 40%;
+  padding-left: 32px;
 }
 
-#AboutImg {
-  width: 90%;
-}
+/*        Read More Section         */
 
-/*              Founders Section        */
-
-#FoundersContent {
+.founders-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -56,108 +29,50 @@
   height: 100%;
 }
 
-#FoundersImg {
-  display: flex;
-  align-items: end;
-  justify-content: center;
-  flex-direction: column;
-  text-align: end;
-  flex: 0.5;
+#foundersImg {
+  max-width: 50%;
+  padding-left: 32px;
 }
 
-#AboutDivContent {
-  margin-top: 20px;
-  height: 100%;
+.about-text {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-#AboutPara {
-  flex: 0.5;
-  display: flex;
-  flex-direction: column;
+  flex-flow: column;
   justify-content: center;
-  overflow: auto;
   align-items: flex-start;
-}
-
-#AboutPara p {
-  margin-top: 10px;
-}
-#BuiltByPara {
-  width: 80%;
-}
-
-#CoFoundersText {
-  width: 70%;
-}
-
-.read-more-button {
-  color: white;
-  background-color: #4ca6fa;
-  border: none;
-  border-radius: 10px;
-  width: 25%;
-  height: 10%;
-  margin-top: 10px;
-}
-
-.read-more-button:hover {
-  cursor: pointer;
-}
-.read-more-button a {
-  text-decoration: none;
-  color: white;
+  gap: 32px;
 }
 
 /*             Founders Section             */
 
-#Founders {
+#founders {
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
 }
 
-#TransitionText {
+#foundersHeader {
   display: flex;
+  flex-flow: column;
   justify-content: center;
   align-items: center;
-
-  flex-direction: column;
-  margin-top: -20px;
+  padding-bottom: 64px;
 }
 
-#TransitionText h1 {
-  font-size: 70px;
-}
-
-#FoundersImg {
-  order: 1;
-}
-
-#FoundersImg img {
-  width: 100%;
-  height: auto;
-}
-
-#Headshots {
-  margin-top: 30px;
+#headshots {
   display: flex;
-  flex-direction: row;
+  flex-flow: row;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 
-.headshot {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-}
+.headshot,
 .headshot p {
-  text-align: center;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .headshot img {
@@ -170,77 +85,57 @@
   color: black;
 }
 
-#RequestDemoDiv {
-  flex: 1;
-  width: 100%;
-  height: 100%;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-#DemoRequestButton {
-  border-radius: 10px;
-  font-weight: bold;
-  color: white;
-  background-color: rgb(var(--blue));
-  border: none;
-  width: 50%;
-  height: 15%;
-  margin-top: 15px;
-}
-#DemoRequestButton:hover {
-  cursor: pointer;
-}
-
-#DemoRequestButton a {
-  text-decoration: none;
-  color: white;
-}
-
 /*             Media Queries             */
 
 @media only screen and (max-width: 1200px) {
-  
+  .hero-content {
+    flex-flow: column-reverse;
+  }
+
+  #aboutImg {
+    padding: 0 0 32px 0;
+    min-width: 400px;
+  }
 }
 
 @media only screen and (max-width: 992px) {
-  #MissionDiv {
-    flex-direction: column;
-    height: 100%;
-  }
-  #MissionDivImg{
-    display: none;
+  #founders {
+    height: fit-content;
+    padding: 32px 0;
   }
 
-  #AboutDivContent{
-    flex-direction: column;
-    justify-content: start;
-  }
-  #AboutPara{
-    justify-content: start;
-    flex:0.3;
+  .founders-content {
+    flex-flow: column;
+    justify-content: center;
   }
 
-  
-  #AboutImg {
-    width: 80%;
-  }
-  #MissionDivText {
-    margin-top: 10px;
-    flex: 0.5;
+  #foundersImg {
+    padding: 32px 0 0 0;
+    max-width: 80%;
   }
 
-  #About-Header {
-    font-size: 30px;
+  #headshots {
+    flex-flow: column;
+  }
+
+  .headshot {
+    padding: 16px 0;
   }
 }
 
-@media only screen and (max-width: 768px) { 
-
+@media only screen and (max-width: 768px) {
+  .hero-text {
+    width: auto;
+    min-width: auto;
+  }
 }
 
 @media only screen and (max-width: 600px) {
+  #hero-section {
+    height: 70vh;
+  }
+
+  #aboutImg {
+    min-width: 256px;
+  }
 }

@@ -139,6 +139,10 @@
   }
 
   #aboutImg {
-    min-width: 256px;
+    display: none;
+  }
+
+  .about-text{
+    gap:20px;
   }
 }

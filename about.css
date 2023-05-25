@@ -134,6 +134,9 @@
   #hero-section {
     height: 70vh;
   }
+  #readMore{
+    height: 120vh;
+  }
 
   #aboutImg {
     min-width: 256px;

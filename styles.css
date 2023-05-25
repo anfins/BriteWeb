@@ -171,7 +171,6 @@ nav {
     align-items: center;
     width: 100%;
     padding: 8px 10%;
-    background-color: white;
     z-index: 1;
 }
 
@@ -339,6 +338,7 @@ nav a {
 
     nav {
         position: fixed;
+        background-color: white;
     }
 
     .nav-links {

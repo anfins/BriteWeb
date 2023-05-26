@@ -45,6 +45,11 @@ p, .text-large {
     font-weight: 400;
 }
 
+
+.text-large-bold {
+    font-size: 24px;
+    font-weight: bold;
+}
 .text-medium {
     font-size: 20px;
     font-weight: 400;

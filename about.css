@@ -134,13 +134,16 @@
   #hero-section {
     height: 70vh;
   }
+
+  
   #readMore{
     height: 120vh;
   }
 
-  #aboutImg {
-    display: none;
+  #aboutImg{
+    min-width: 200px;
   }
+
 
   .about-text{
     gap:20px;

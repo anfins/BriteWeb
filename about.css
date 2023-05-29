@@ -96,14 +96,13 @@
 }
 @keyframes rotate-scale {
   0% {
-    transform: rotate(0deg);
+    transform: scale(1);
   }
   50% {
-    transform: rotate(180deg);
     transform: scale(1.05);
   }
   100% {
-    transform: rotate(360deg);
+    transform: scale(1);
   }
 }
 

@@ -85,27 +85,6 @@
   color: black;
 }
 
-#outerSun{
-  animation-name: rotate-scale;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  transform-origin: center;
-
-
-}
-@keyframes rotate-scale {
-  0% {
-    transform: rotate(0deg);
-  }
-  50% {
-    transform: rotate(180deg);
-    transform: scale(1.05);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
 
 
 

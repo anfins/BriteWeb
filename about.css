@@ -86,10 +86,9 @@
 }
 
 #outerSun{
-  animation-name: scaleAnim;
+  animation-name: rotate;
   animation-duration: 6s;
   animation-iteration-count: infinite;
-  animation-direction: alternate;
   transform-origin: center;
 
 
@@ -99,7 +98,7 @@
     transform: scale(1);
   }
   50% {
-    transform: scale(1.08s);
+    transform: scale(1.08);
   }
   100% {
     transform: scale(1);

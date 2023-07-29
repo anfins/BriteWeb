@@ -36,8 +36,11 @@
         <li>
           <a href="#contact">Contact</a>
         </li>
-        <li class="bottom-link">
-          <a href="#request-a-demo" class="cta-btn">Request a Demo</a>
+        <li>
+          <a href="#request-a-demo" class="cta-btn-grey">Request a Demo</a>
+        </li>
+        <li>
+          <a id="loginButton" class="cta-btn">Login</a>
         </li>
       </ul>
     </nav>
@@ -52,9 +55,9 @@
           </h1>
 
           <p class="text-large">
-            Brite gives educators feedback and real-time insights into
-            classroom learning and engagement, while assisting students on their
-            academic journey.
+            Brite gives educators feedback and real-time insights into classroom
+            learning and engagement, while assisting students on their academic
+            journey.
           </p>
 
           <a href="#contact" class="cta-btn">Join now</a>
@@ -106,8 +109,7 @@
             Foster greater classroom engagement with Brite. Using Brite,
             students can ask questions anonymously, without the fear of being
             judged by peers. Students can also provide feedback to their
-            educator directly after class, ensuring they don't get left
-            behind.
+            educator directly after class, ensuring they don't get left behind.
           </p>
         </div>
         <div class="student-images">
@@ -192,5 +194,13 @@
     </section>
 
     <script defer src="script.js"></script>
+    <script>
+      document
+        .getElementById("loginButton")
+        .addEventListener("click", function () {
+          // Change the URL to the desired website
+          window.location.href = "https://app.brite.company/"; // Replace with the website URL you want to redirect to
+        });
+    </script>
   </body>
 </html>

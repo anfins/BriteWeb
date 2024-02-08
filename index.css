@@ -18,7 +18,7 @@
     align-items: center;
 }
 
-.educator-content {
+.reward-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -26,19 +26,19 @@
     gap: 32px;
 }
 
-.educator-dashboard {
-    width: 60%;
+.reward-page {
+    width: 25%;
     box-shadow: 0 4px 32px -6px rgba(0, 0, 0, 0.4);
     border-radius: 16px;
 }
 
-.educator-text {
+.reward-text {
     display: flex;
     flex-flow: column;
     justify-content: center;
     align-items: flex-start;
     gap: 32px;
-    max-width: 460px;
+    max-width: 700px;
 }
 
 /*          Student Section              */

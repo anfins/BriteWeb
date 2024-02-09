@@ -4,7 +4,7 @@
   width: 25%;
 }
 .hero-content .dashboard-img {
-    width: 50%;
+    width: 25%;
   }
 
 .phone-img {
@@ -31,7 +31,7 @@
 
 .reward-page {
   width: 25%;
-  box-shadow: 0 4px 32px -6px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 32px -6px rgba(255, 255, 255, 0.7);
   border-radius: 16px;
 }
 

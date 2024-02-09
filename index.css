@@ -15,7 +15,7 @@
 /*          Educator Section              */
 
 #educator {
-  background-color: rgba(var(--blue), 0.1);
+  background-color: rgba(var(--blue), 0.2);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,8 +30,7 @@
 }
 
 .reward-page {
-  width: 25%;
-  box-shadow: 0 4px 32px -6px rgba(255, 255, 255, 0.7);
+  width: 45%;
   border-radius: 16px;
 }
 

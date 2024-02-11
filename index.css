@@ -16,7 +16,7 @@
 /*          Reward Section              */
 
 #reward {
-  background-color: rgba(var(--purple), 1);
+  background-color: rgba(var(--purple), 0.1);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -53,7 +53,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(var(--purple), 0.1);
+  background-color: rgba(var(--purple), 1);
 }
 
 .analysis-content {

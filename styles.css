@@ -94,6 +94,17 @@ p,
   font-weight: 600;
   text-decoration: none;
 }
+.cta-btn-white {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5em 1em;
+  border-radius: 0.5em;
+  background-color: white !important;
+  color: black !important;
+  font-weight: 600;
+  text-decoration: none;
+}
 .cta-btn-grey {
   display: inline-flex;
   justify-content: center;
@@ -227,11 +238,11 @@ nav a {
   color: white;
   text-decoration: none;
   transition: all 0.15s ease-in;
-  border-bottom: 2px solid rgb(var(--blue), 0);
+  border-bottom: 2px solid rgb(var(--purple), 0);
 }
 
 .nav-links a:hover {
-  border-bottom: 2px solid rgb(var(--blue), 1);
+  border-bottom: 2px solid rgb(var(--purple), 1);
 }
 
 #menu-check,

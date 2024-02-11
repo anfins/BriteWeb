@@ -4,10 +4,9 @@
   width: 25%;
 }
 .hero-content .dashboard-img {
-    width: 50%;
-    filter: drop-shadow(0 8px 24px rgba(0, 0, 0, 0.4));
-
-  }
+  width: 50%;
+  filter: drop-shadow(0 8px 24px rgba(0, 0, 0, 0.4));
+}
 
 .phone-img {
   max-height: 80vh !important;
@@ -36,7 +35,7 @@
   border-radius: 16px;
 }
 
-.reward-text-header{
+.reward-text-header {
   max-width: 600px;
 }
 .reward-text {
@@ -48,45 +47,39 @@
   max-width: 700px;
 }
 
-
-
 /*          Analysis Section              */
 
 #analysis {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(var(--purple), 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(var(--purple), 1);
+}
 
-  }
-  
-  .analysis-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    gap: 50px;
-  }
-  
-  .analysis-content .dashboard-img{
-    width: 65%;
-    filter: drop-shadow(0 8px 24px rgba(0, 0, 0, 0.4));
+.analysis-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 50px;
+}
 
-  }
-  
-  .reward-text-header{
-    max-width: 600px;
-  }
-  .reward-text {
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 32px;
-    max-width: 700px;
-  }
-  
+.analysis-content .dashboard-img {
+  width: 65%;
+  filter: drop-shadow(0 8px 24px rgba(0, 0, 0, 0.4));
+}
 
+.reward-text-header {
+  max-width: 600px;
+}
+.reward-text {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 32px;
+  max-width: 700px;
+}
 
 /*          Student Section              */
 
@@ -180,6 +173,13 @@
   .reward-page {
     width: 600px;
   }
+  .hero-content .dashboard-img {
+    display: none;
+  }
+  .analysis-content .dashboard-img {
+    display: none;
+  }
+
 
   .reward-text {
     max-width: 600px;
@@ -222,7 +222,7 @@
 
 @media only screen and (max-width: 768px) {
   #hero-section {
-    height: 150vh;
+    height: 100vh;
     padding: 10%;
   }
 

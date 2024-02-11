@@ -8,6 +8,7 @@
   --blue: 76, 166, 250;
   --dark-gray: 65, 65, 65;
   --purple: 51, 51, 204;
+  --bright-purple: 80, 51, 204;
 }
 
 * {
@@ -114,6 +115,9 @@ p,
 }
 .purple-text {
   color: #3333cc;
+}
+.bright-purple-text {
+  color: #ffffff;
 }
 .white-text {
   color: white;
@@ -267,7 +271,7 @@ nav a {
   align-items: flex-start;
   gap: 32px;
   width: 584px;
-  min-width: 584px;
+  min-width: 500px;
 }
 
 /*          Contact             */
@@ -280,6 +284,7 @@ nav a {
   justify-content: space-between;
   align-items: center;
   gap: 64px;
+  background-color: rgba(var(--purple), 0.1);
 }
 
 .contact-text {
@@ -292,10 +297,6 @@ nav a {
 
 #contact-header {
   max-width: 600px;
-}
-
-.email-link {
-  color: white;
 }
 
 /*          Footer              */

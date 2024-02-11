@@ -4,7 +4,9 @@
   width: 25%;
 }
 .hero-content .dashboard-img {
-    width: 25%;
+    width: 50%;
+    filter: drop-shadow(0 8px 24px rgba(0, 0, 0, 0.4));
+
   }
 
 .phone-img {
@@ -12,10 +14,10 @@
   filter: drop-shadow(0 8px 24px rgba(0, 0, 0, 0.4));
 }
 
-/*          Educator Section              */
+/*          Reward Section              */
 
-#educator {
-  background-color: rgba(var(--blue), 0.2);
+#reward {
+  background-color: rgba(var(--purple), 0.1);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -45,6 +47,46 @@
   gap: 32px;
   max-width: 700px;
 }
+
+
+
+/*          Analysis Section              */
+
+#analysis {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(var(--purple), 1);
+
+  }
+  
+  .analysis-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 32px;
+  }
+  
+  .analysis-content .dashboard-img{
+    width: 65%;
+    filter: drop-shadow(0 8px 24px rgba(0, 0, 0, 0.4));
+
+  }
+  
+  .reward-text-header{
+    max-width: 600px;
+  }
+  .reward-text {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 32px;
+    max-width: 700px;
+  }
+  
+
 
 /*          Student Section              */
 

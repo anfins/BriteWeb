@@ -16,7 +16,7 @@
 /*          Reward Section              */
 
 #reward {
-  background-color: rgba(var(--purple), 0.1);
+  background-color: rgba(var(--purple), 1);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,7 +31,7 @@
 }
 
 .reward-page {
-  width: 50%;
+  width: 45%;
   border-radius: 16px;
 }
 
@@ -53,7 +53,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(var(--purple), 1);
+  background-color: rgba(var(--purple), 0.1);
 }
 
 .analysis-content {
@@ -179,7 +179,6 @@
   .analysis-content .dashboard-img {
     display: none;
   }
-
 
   .reward-text {
     max-width: 600px;

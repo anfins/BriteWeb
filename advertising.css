@@ -1,11 +1,19 @@
 /*             Hero Section             */
 
 .phone-img {
-  width: 30%;
+  width: 35%;
 }
 
 .hero-text-header {
   max-width: 400px;
+}
+
+.hero-phones {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: right;
+  gap: 20px;
 }
 
 /*          Excite Section                    */
@@ -26,7 +34,7 @@
 }
 
 .excite-page {
-  width: 40%;
+  width: 35%;
   border-radius: 16px;
 }
 

@@ -65,7 +65,7 @@
 }
 
 .analysis-content .dashboard-img {
-  width: 65%;
+  width: 62.5%;
   filter: drop-shadow(0 8px 24px rgba(0, 0, 0, 0.4));
 }
 
@@ -78,7 +78,7 @@
   justify-content: center;
   align-items: flex-start;
   gap: 32px;
-  max-width: 700px;
+  max-width: 550px;
 }
 
 /*          Student Section              */

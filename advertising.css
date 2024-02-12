@@ -8,6 +8,40 @@
   max-width: 400px;
 }
 
+/*          Excite Section                    */
+
+#excite {
+  background-color: rgba(var(--purple), 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.excite-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 32px;
+}
+
+.excite-page {
+  width: 40%;
+  border-radius: 16px;
+}
+
+.excite-text-header {
+  max-width: 600px;
+}
+.excite-text {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 12px;
+  max-width: 500px;
+}
+
 /*          Request Demo Section              */
 
 #request-a-demo {

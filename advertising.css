@@ -50,6 +50,34 @@
   max-width: 500px;
 }
 
+/*          Footer              */
+
+#footer {
+  height: 20vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2em;
+  list-style-type: none;
+  overflow: hidden;
+  transition: max-height 0.15s ease-in;
+  z-index: 1;
+}
+
+.footer-links a {
+  color: #000;
+  text-decoration: none;
+  transition: all 0.15s ease-in;
+  border-bottom: 2px solid rgb(var(--purple), 0);
+}
+
 /*          Request Demo Section              */
 
 #request-a-demo {

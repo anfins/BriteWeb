@@ -5,7 +5,7 @@
 }
 .hero-content .dashboard-img {
   width: 50%;
-  filter: drop-shadow(0 8px 24px rgba(0, 0, 0, 0.4));
+  filter: drop-shadow(0 8px 24px rgba(0, 0, 0, 0.2));
 }
 
 .phone-img {
@@ -31,7 +31,7 @@
 }
 
 .reward-page {
-  width: 45%;
+  width: 40%;
   border-radius: 16px;
 }
 
@@ -53,7 +53,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(var(--purple), 1);
+  background-color: rgba(var(--lavender), 0.4);
 }
 
 .analysis-content {
@@ -79,42 +79,6 @@
   align-items: flex-start;
   gap: 32px;
   max-width: 550px;
-}
-
-/*          Student Section              */
-
-#student {
-  background-color: rgb(var(--dark-gray));
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.student-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-}
-
-.student-images {
-  gap: 32px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.student-images .phone-img {
-  max-width: 55%;
-}
-.student-text-header .student-text {
-  color: white;
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 32px;
-  max-width: 348px;
 }
 
 /*          Request Demo Section              */
@@ -167,7 +131,16 @@
 
 @media only screen and (max-width: 1200px) {
   .reward-content {
-    flex-flow: column-reverse;
+    flex-flow: column;
+  }
+
+
+  .analysis-content {
+    flex-flow: column;
+    
+  }
+  .analysis-content .dashboard-img {
+    width: 100%;
   }
 
   .reward-page {
@@ -176,9 +149,7 @@
   .hero-content .dashboard-img {
     display: none;
   }
-  .analysis-content .dashboard-img {
-    display: none;
-  }
+
 
   .reward-text {
     max-width: 600px;
@@ -209,13 +180,8 @@
   .hero-content .phone-img {
     display: none;
   }
-
-  .student-images .phone-img {
-    max-width: 100%;
-  }
-
-  .student-text {
-    max-width: 320px;
+  .reward-page {
+    width: 70%;
   }
 }
 
@@ -235,42 +201,23 @@
     margin-top: 64px;
   }
 
+  .analysis-content .dashboard-img {
+    display: none;
+  }
+
   .hero-text {
     width: auto;
     min-width: auto;
   }
 
-  .reward-page {
-    display: none;
-  }
-
   .reward-text {
     max-width: 500px;
-  }
-
-  #student {
-    height: 160vh;
-    padding: 10%;
-  }
-
-  .student-content {
-    flex-flow: column;
-    justify-content: center;
-    gap: 0;
-  }
-
-  .student-text {
-    max-width: 500px;
-  }
-
-  .student-images {
-    margin-top: 64px;
   }
 }
 
 @media only screen and (max-width: 600px) {
   .reward-page {
-    width: 100%;
+    display: none;
   }
 }
 

@@ -157,6 +157,11 @@ p,
   background-color: rgba(var(--blue), 0.1);
 }
 
+.lavender-background {
+  background-color: rgba(var(--lavender), 0.4);
+  
+}
+
 /*             Transitions                */
 
 .hidden {
@@ -301,7 +306,7 @@ nav a {
   justify-content: space-between;
   align-items: center;
   gap: 64px;
-  background-color: rgba(var(--purple), 0.1);
+  background-color: rgba(var(--lavender), 0.4);
 }
 
 .contact-text {
@@ -352,7 +357,7 @@ nav a {
 @media only screen and (max-width: 992px) {
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 850px) {
   h1,
   .heading-1 {
     font-size: min(8vw, 48px);

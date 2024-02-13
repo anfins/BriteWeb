@@ -144,12 +144,11 @@
     display: none;
   }
 
-  .student-images .phone-img {
-    max-width: 100%;
+  .excite-content {
+    flex-flow: column;
   }
-
-  .student-text {
-    max-width: 320px;
+  .excite-page {
+    width: 60%;
   }
 }
 
@@ -167,38 +166,11 @@
     width: auto;
     min-width: auto;
   }
-
-  .reward-page {
-    display: none;
-  }
-
-  .reward-text {
-    max-width: 500px;
-  }
-
-  #student {
-    height: 160vh;
-    padding: 10%;
-  }
-
-  .student-content {
-    flex-flow: column;
-    justify-content: center;
-    gap: 0;
-  }
-
-  .student-text {
-    max-width: 500px;
-  }
-
-  .student-images {
-    margin-top: 64px;
-  }
 }
 
 @media only screen and (max-width: 600px) {
-  .reward-page {
-    width: 100%;
+  .excite-page {
+    display: none;
   }
 }
 

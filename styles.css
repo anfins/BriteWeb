@@ -159,7 +159,6 @@ p,
 
 .lavender-background {
   background-color: rgba(var(--lavender), 0.4);
-  
 }
 
 /*             Transitions                */
@@ -447,6 +446,9 @@ nav a {
   }
 
   #contact-header {
+    display: none;
+  }
+  .footer-dis {
     display: none;
   }
 }

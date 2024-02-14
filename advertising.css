@@ -50,6 +50,59 @@
   max-width: 500px;
 }
 
+/* Promotional Why Section */
+#why {
+  background-color: rgba(var(--lavender), 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.why-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 32px;
+}
+
+.why-text {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 12px;
+  max-width: 500px;
+}
+.why-page {
+  width: 45%;
+  border-radius: 16px;
+}
+
+/*          Contact             */
+#contact {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 64px;
+  background-color: white;
+}
+
+/*          Trusted By          */
+
+#trustedBy {
+  display: flex;
+  flex-direction: column;
+}
+
+.trustedBy__content {
+  display: flex;
+  flex-direction: row;
+}
+
 /*          Footer              */
 
 #footer {
@@ -58,6 +111,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  background-color: rgba(var(--purple), 0.1);
 }
 
 .footer-links {
@@ -127,6 +181,17 @@
 }
 
 @media only screen and (max-width: 1200px) {
+  .hero-content {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+
+  .hero-phones {
+    justify-content: center;
+  }
+  .hero-text-header {
+    max-width: 100vw;
+  }
   .request-demo-content {
     flex-direction: column-reverse;
     gap: 48px;
@@ -140,26 +205,36 @@
 }
 
 @media only screen and (max-width: 992px) {
-  .hero-content .phone-img {
-    display: none;
-  }
-
   .excite-content {
     flex-flow: column;
+  }
+
+  .why-content {
+    flex-flow: column-reverse;
   }
   .excite-page {
     width: 60%;
   }
+  .why-page {
+    width: 80%;
+  }
 }
 
 @media only screen and (max-width: 768px) {
+  #heroPhoneB {
+    display: none;
+  }
   #hero-section {
-    height: 100vh;
+    height: 140vh;
     padding: 10%;
   }
 
   .hero-content {
     flex-flow: column;
+    gap: 50px;
+  }
+  #heroPhoneA {
+    width: 90%;
   }
 
   .hero-text {
@@ -170,7 +245,10 @@
 
 @media only screen and (max-width: 600px) {
   .excite-page {
-    display: none;
+    width: 90%;
+  }
+  .why-page {
+    width: 90%;
   }
 }
 
@@ -180,6 +258,12 @@
   }
 
   .hero-content .phone-img {
+    display: none;
+  }
+  .excite-page {
+    display: none;
+  }
+  .why-page {
     display: none;
   }
 }

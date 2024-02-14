@@ -31,7 +31,7 @@
 }
 
 .reward-page {
-  width: 40%;
+  width: 26%;
   border-radius: 16px;
 }
 
@@ -130,14 +130,15 @@
 }
 
 @media only screen and (max-width: 1200px) {
+  .hero-content .dashboard-img {
+    display: none;
+  }
   .reward-content {
     flex-flow: column;
   }
 
-
   .analysis-content {
     flex-flow: column;
-    
   }
   .analysis-content .dashboard-img {
     width: 100%;
@@ -146,10 +147,6 @@
   .reward-page {
     width: 600px;
   }
-  .hero-content .dashboard-img {
-    display: none;
-  }
-
 
   .reward-text {
     max-width: 600px;
@@ -177,11 +174,8 @@
 }
 
 @media only screen and (max-width: 992px) {
-  .hero-content .phone-img {
-    display: none;
-  }
   .reward-page {
-    width: 70%;
+    width: 50%;
   }
 }
 
@@ -191,14 +185,8 @@
     padding: 10%;
   }
 
-  .hero-content {
-    flex-flow: column;
-  }
-
-  .hero-content .phone-img {
-    display: block;
-    width: auto;
-    margin-top: 64px;
+  .hero-content .dashboard-img {
+    display: none;
   }
 
   .analysis-content .dashboard-img {
@@ -216,8 +204,11 @@
 }
 
 @media only screen and (max-width: 600px) {
+  #reward {
+    height: 130vh;
+  }
   .reward-page {
-    display: none;
+    width: 80%;
   }
 }
 

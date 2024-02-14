@@ -21,6 +21,9 @@
 
 /*        Read More Section         */
 
+#readMore {
+  background-color: rgba(var(--purple), 0.1);
+}
 .founders-content {
   display: flex;
   justify-content: space-between;

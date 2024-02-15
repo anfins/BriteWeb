@@ -130,9 +130,7 @@
 }
 
 @media only screen and (max-width: 1200px) {
-  .hero-content .dashboard-img {
-    display: none;
-  }
+
   .reward-content {
     flex-flow: column-reverse;
   }
@@ -185,10 +183,15 @@
     padding: 10%;
   }
 
-  .hero-content .dashboard-img {
-    display: none;
+  .hero-content {
+    flex-direction: column;
+    gap: 30px;
+
   }
 
+  .hero-content .dashboard-img{
+    width: 100%;
+  }
   .analysis-content .dashboard-img {
     
   }

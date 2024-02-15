@@ -6,6 +6,9 @@
 
 /*             Hero Section             */
 
+#hero-section {
+  height: 100vh;
+}
 .mission-text {
   display: flex;
   justify-content: center;
@@ -135,7 +138,7 @@
 
 @media only screen and (max-width: 600px) {
   #hero-section {
-    height: 70vh;
+    height: 100vh;
   }
 
   #readMore {

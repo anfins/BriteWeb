@@ -139,13 +139,15 @@
   }
 
   #readMore {
-    height: 120vh;
+    height: 100vh;
   }
 
   #aboutImg {
     min-width: 200px;
   }
-
+  #foundersImg {
+    display: none;
+  }
   .about-text {
     gap: 20px;
   }
@@ -157,6 +159,6 @@
   }
 
   #readMore {
-    height: 140vh;
+    height: 100vh;
   }
 }

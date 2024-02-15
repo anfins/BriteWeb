@@ -134,7 +134,7 @@
     display: none;
   }
   .reward-content {
-    flex-flow: column;
+    flex-flow: column-reverse;
   }
 
   .analysis-content {
@@ -190,7 +190,7 @@
   }
 
   .analysis-content .dashboard-img {
-    display: none;
+    
   }
 
   .hero-text {
